@@ -17,12 +17,12 @@ disableHugoGeneratorInject = false
     identifier = 'works'
     name = 'work'
     url = 'works/'
-    weight = 20
+    weight = 10
   [[menus.main]]
     identifier = 'bio'
     name = 'bio'
     url = 'bio/'
-    weight = 30
+    weight = 10
   # [[menus.main]]
   #   identifier = 'tags'
   #   name = 'tags'
@@ -31,26 +31,26 @@ disableHugoGeneratorInject = false
 
   [[menus.main]]
     identifier = 'language'
-    name = 'english'
+    name = 'en'
     # pre = '{{< svg-icon "bi-translate" >}}'
-    weight = 10
+    weight = 30
     [[menus.main]]
         parent = "language"
-        name = 'english'
-        weight = 11
+        name = 'en'
+        weight = 31
     [[menus.main]]
         parent = "language"
-        name = 'español'
-        weight = 12
+        name = 'es'
+        weight = 32
     [[menus.main]]
         parent = "language"
-        name = 'français'
-        weight = 13
+        name = 'fr'
+        weight = 33
 
 [languages]
   [languages.en]
     languageCode = 'en-US'
-    languageName = 'english'
+    languageName = 'en 🇺🇸'
     LanguageDirection = 'ltr'
     timeZone = 'America/New_York'
     title = 'Sebastien Sanz de Santamaria'
@@ -60,8 +60,8 @@ disableHugoGeneratorInject = false
     [languages.en.params]
         subtitle = 'Product Owner, Full Stack Web Developer , Cultural Producer'
   [languages.es]
-    languageCode = 'es-ES'
-    languageName = 'español'
+    languageCode = 'es-MX'
+    languageName = 'es 🇲🇽 '
     LanguageDirection = 'ltr'
     timeZone = "America/Mexico_City"
     title = 'Sebastien Sanz de Santamaria'
@@ -75,7 +75,7 @@ disableHugoGeneratorInject = false
         works = "/obras/:slug"
   [languages.fr]
     languageCode = 'fr-FR'
-    languageName = 'français'
+    languageName = 'fr 🇫🇷'
     LanguageDirection = 'ltr'
     timeZone = "Europe/Paris"
     title = 'Sebastien Sanz de Santamaria'
