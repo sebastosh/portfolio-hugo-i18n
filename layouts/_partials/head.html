@@ -11,3 +11,12 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
+    <link rel="stylesheet" href="{{ relURL "fonts.css" }} ">
+  <link rel="stylesheet" href="{{ relURL "style.css" }} ">
+    {{- partial "favicon.html" . -}}
+  {{ with .OutputFormats.Get "RSS" }}
+  {{ printf `
+  <link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
+  {{ end }}
+  {{- partial "opengraph.html" . -}}
+  {{- partial "twitter_cards.html" . -}}

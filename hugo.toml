@@ -17,42 +17,42 @@ disableHugoGeneratorInject = false
     identifier = 'about'
     name = 'about'
     url = 'about/'
-    weight = 10
+    weight = 20
 
   [[menus.main]]
     identifier = 'works'
     name = 'works'
     url = 'works/'
-    weight = 20
-
-  [[menus.main]]
-    identifier = 'tags'
-    name = 'Tags'
-    url  = 'tags/'
     weight = 30
 
   [[menus.main]]
-    identifier = 'language'
-    name = 'English'
-    # pre = '{{< svg-icon "bi-translate" >}}'
+    identifier = 'tags'
+    name = 'tags'
+    url  = 'tags/'
     weight = 40
-[[menus.main]]
-    parent = "language"
-    name = 'English'
-    weight = 41
-[[menus.main]]
-    parent = "language"
-    name = 'Español'
-    weight = 42
-[[menus.main]]
-    parent = "language"
-    name = 'Français'
-    weight = 43
+
+  [[menus.main]]
+    identifier = 'language'
+    name = 'english'
+    # pre = '{{< svg-icon "bi-translate" >}}'
+    weight = 10
+    [[menus.main]]
+        parent = "language"
+        name = 'english'
+        weight = 11
+    [[menus.main]]
+        parent = "language"
+        name = 'español'
+        weight = 12
+    [[menus.main]]
+        parent = "language"
+        name = 'français'
+        weight = 13
 
 [languages]
   [languages.en]
     languageCode = 'en-US'
-    languageName = 'English'
+    languageName = 'english'
     LanguageDirection = 'ltr'
     timeZone = 'America/New_York'
     title = 'Sebastien Sanz de Santamaria'
@@ -63,7 +63,7 @@ disableHugoGeneratorInject = false
         subtitle = 'Product Owner, Full Stack Web Developer , Cultural Producer'
   [languages.es]
     languageCode = 'es-ES'
-    languageName = 'Español'
+    languageName = 'español'
     LanguageDirection = 'ltr'
     timeZone = "America/Mexico_City"
     title = 'Sebastien Sanz de Santamaria'
@@ -73,11 +73,11 @@ disableHugoGeneratorInject = false
     [languages.es.params]
         subtitle = 'Product Owner, Desarrollador Web, Productor Cultural'
     [languages.es.permalinks]
-        _posts = "/articulos/"
-        posts = "/articulos/:slug"
+        _works = "/obras/"
+        works = "/obras/:slug"
   [languages.fr]
     languageCode = 'fr-FR'
-    languageName = 'Français'
+    languageName = 'français'
     LanguageDirection = 'ltr'
     timeZone = "Europe/Paris"
     title = 'Sebastien Sanz de Santamaria'

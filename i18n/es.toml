@@ -2,13 +2,13 @@ copyright = 'Derechos de autor'
 allrightsreserved = 'Reservados todos los derechos'
 
 [about]
-other = "Acerca de"
+other = "acerca de"
 
 [works]
-other = "Obras"
+other = "obras"
 
 [tags]
-other = "Etiquetas"
+other = "tags"
 
 [language]
-other = "Español"
+other = "español"

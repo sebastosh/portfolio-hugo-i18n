@@ -4,7 +4,7 @@
     <a href="{{ .Site.Home.RelPermalink }}" aria-label="Home">
        <h1>{{ .Site.Title }}</h1>
     </a>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <nav>
         {{ $currentPage := . }}
         
         {{ range .Site.Menus.main }}
@@ -34,35 +34,9 @@
                 {{ end }}
               </ul>
             </li>
-
-          {{ else if .HasChildren }}
-            <!-- Other Menus with Submenus -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}"
-                href="{{ .URL }}"
-                id="navbarDropdown{{ .Identifier }}"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                aria-label="{{ i18n .Identifier | default .Name }}"
-              >
-                {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ i18n .Identifier | default .Name }}">
-                {{ range .Children }}
-                  <li>
-                    <a class="dropdown-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">
-                      {{ .Pre | markdownify }}{{ .Name }}
-                    </a>
-                  </li>
-                {{ end }}
-              </ul>
-            </li>
-
           {{ else }}
             <!-- Regular Menu Items -->
-            <li class="nav-item">
+            
               <a
                 class="nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}"
                 href="{{ .URL | relLangURL }}"
@@ -71,8 +45,8 @@
               >
                 {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
               </a>
-            </li>
+           
           {{ end }}
         {{ end }}
-      </ul>
+      </nav>
 

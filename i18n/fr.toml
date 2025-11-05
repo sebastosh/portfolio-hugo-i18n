@@ -1,14 +1,14 @@
-copyright = "Droit d'auteur"
+copyright = "Droits d'auteur"
 allrightsreserved = 'Tous droits réservés'
 
 [about]
-other = "A Propos"
+other = "à propos"
 
 [works]
-other = "Ouvres"
+other = "oeuvres"
 
 [tags]
-other = "Mots-clés"
+other = "tags"
 
 [language]
-other = "Français"
+other = "français"
