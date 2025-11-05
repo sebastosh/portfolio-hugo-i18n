@@ -1,8 +1,7 @@
 +++
 title = 'Sessiones de Synth'
 image = "synth-sessions.png"
-date = 2023-03-15T11:00:00-07:00
-draft = false
+date = 2023-03-15T00:00:00-07:00
 tags = ['ReactJS','ToneJS','NexusUI','Rails API','JWTAuth']
 +++
 

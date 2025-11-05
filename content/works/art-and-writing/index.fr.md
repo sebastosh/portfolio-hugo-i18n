@@ -1,8 +1,7 @@
 +++
 title = 'Arts & Writing'
 image = 'artandwriting.png'
-date = 2023-03-15T11:00:00-07:00
-draft = false
+date = 2025-05-01T00:00:00-06:00
 tags = ['product owner','product management','full stack','dev ops', ]
 +++
 

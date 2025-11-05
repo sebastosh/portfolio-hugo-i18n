@@ -1,8 +1,7 @@
 +++
 title = 'Rivet'
 image = "rivet.jpg"
-date = 2023-03-15T11:00:00-07:00
-draft = false
+date = 2018-06-01T00:00:00-06:00
 tags = ['Incubator', 'Entrepreneurship', 'Product Management', 'Product Design']
 +++
 

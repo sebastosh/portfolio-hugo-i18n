@@ -14,22 +14,20 @@ disableHugoGeneratorInject = false
 
 [menus]
   [[menus.main]]
-    identifier = 'about'
-    name = 'about'
-    url = 'about/'
-    weight = 20
-
-  [[menus.main]]
     identifier = 'works'
-    name = 'works'
+    name = 'work'
     url = 'works/'
-    weight = 30
-
+    weight = 20
   [[menus.main]]
-    identifier = 'tags'
-    name = 'tags'
-    url  = 'tags/'
-    weight = 40
+    identifier = 'bio'
+    name = 'bio'
+    url = 'bio/'
+    weight = 30
+  # [[menus.main]]
+  #   identifier = 'tags'
+  #   name = 'tags'
+  #   url  = 'tags/'
+  #   weight = 40
 
   [[menus.main]]
     identifier = 'language'

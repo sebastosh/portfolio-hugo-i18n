@@ -2,7 +2,6 @@
 title = 'Open Call'
 image = "open-call.jpg"
 date = 2023-01-15T09:00:00-07:00
-draft = false
 slug = 'open-call'
 tags = ['ReactJS','Rails API','JWT','AWS S3']
 +++
