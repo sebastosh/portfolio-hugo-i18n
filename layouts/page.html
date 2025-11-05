@@ -1,4 +1,15 @@
 {{ define "main" }}
+ {{ if and (isset .Params "image") .Params.image }}
+            <a href="{{ .Permalink }}" title="{{ .Title }}">
+            {{ $image := .Page.Resources.GetMatch .Params.image }}
+            {{ with $image }}
+                {{ $thumb := .Resize "400x" }}
+                <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+            {{end}}
+            </a>
+        {{ end }}
+
+
   <h1>{{ .Title }}</h1>
 
   {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}

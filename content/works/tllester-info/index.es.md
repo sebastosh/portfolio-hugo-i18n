@@ -1,6 +1,6 @@
 +++
-title = 'Arts & Writing'
-image = 'artandwriting.png'
+title = 'tllester.info'
+image = 'tllester-info.png'
 date = 2023-03-15T11:00:00-07:00
 draft = false
 tags = ['product owner','product management','full stack','dev ops', ]

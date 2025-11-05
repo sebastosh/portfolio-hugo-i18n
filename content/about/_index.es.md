@@ -4,6 +4,10 @@ date = 2023-01-01T08:00:00-07:00
 draft = false
 +++
 
-## About (Spanish)
+Product Owner y Product Manager con experiencia en implementaciones web a gran escala, desde el diseño hasta la puesta en marcha. Trabajo en equipos de hasta 10 ingenieros, diseñadores y responsables de negocio. Mantenimiento de entornos de desarrollo y producción. Jira, Trello, Git, AWS, Figma, Penpot, Notion.
 
-¡Bienvenido a nuestro sitio web! Aquí encontrarás un espacio dinámico lleno de información valiosa, contenido interesante y un mundo de conocimiento por descubrir. Ya sea que busques inspiración, aprendizaje o nuevas ideas, estamos encantados de tenerte aquí. ¡Sumérgete y exploremos juntos!
+Desarrollador Web Full Stack con conocimientos avanzados de HTML, CSS, Javascript, Ruby, React, Ruby on Rails, Node.js, Gatsby, APIs RESTful, JSON, MySQL, PostgreSQL, MongoDB, PHP, WordPress.
+
+Productor Cultural y Cofundador con experiencia en producción y operaciones en arte, cultura y tecnología.
+
+CDMX / Kingsbury, TX

@@ -1,52 +1,43 @@
 <!-- <h1>{{ site.Title }}</h1> -->
 <!-- <p>{{ site.Params.Subtitle }}</p> -->
 <!-- {{ partial "menu.html" (dict "menuID" "main" "page" .) }} -->
-    <a href="{{ .Site.Home.RelPermalink }}" aria-label="Home">
-       <h1>{{ .Site.Title }}</h1>
-    </a>
-          <nav>
-        {{ $currentPage := . }}
-        
-        {{ range .Site.Menus.main }}
-          {{ if eq .Identifier "language" }}
-            <!-- Dynamic Language Switcher -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-   
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                aria-label="Language Switcher"
-              >
-                {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
-                {{ with $.Page.Translations }}
-                  {{ range . }}
-                    <li>
-                      <a class="dropdown-item" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}">
-                        {{ .Language.LanguageName }}
-                      </a>
-                    </li>
-                  {{ end }}
-                {{ end }}
-              </ul>
-            </li>
-          {{ else }}
-            <!-- Regular Menu Items -->
-            
-              <a
-                class="nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}"
-                href="{{ .URL | relLangURL }}"
-                aria-current="page"
-                aria-label="{{ i18n .Identifier | default .Name }}"
-              >
-                {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
-              </a>
-           
-          {{ end }}
-        {{ end }}
-      </nav>
+<a href="{{ .Site.Home.RelPermalink }}" aria-label="Home">
+  <h1>{{ .Site.Title }}</h1>
+</a>
+<nav>
+  {{ $currentPage := . }}
 
+  {{ range .Site.Menus.main }}
+  {{ if eq .Identifier "language" }}
+  <!-- Dynamic Language Switcher -->
+
+  <div class="dropdown">
+    <a href="#" aria-expanded="false" aria-label="Language Switcher">
+      {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
+    </a>
+
+
+    <div class="dropdown-content">
+      {{ with $.Page.Translations }}
+      {{ range . }}
+
+      <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}">
+        {{ .Language.LanguageName }}
+      </a>
+
+      {{ end }}
+      {{ end }}
+    </div>
+
+  </div>
+  {{ else }}
+  <!-- Regular Menu Items -->
+
+  <a class="nav-link {{ if or ($currentPage.IsMenuCurrent " main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{
+    end }}" href="{{ .URL | relLangURL }}" aria-current="page" aria-label="{{ i18n .Identifier | default .Name }}">
+    {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
+  </a>
+
+  {{ end }}
+  {{ end }}
+</nav>

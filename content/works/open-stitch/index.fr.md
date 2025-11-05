@@ -1,5 +1,6 @@
 +++
 title = 'Open Stitch'
+image = "open-stitch.png"
 date = 2023-02-15T10:00:00-07:00
 draft = false
 slug = 'Open Stitch'
