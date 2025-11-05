@@ -1,0 +1,14 @@
+copyright = 'Derechos de autor'
+allrightsreserved = 'Reservados todos los derechos'
+
+[about]
+other = "Acerca de"
+
+[works]
+other = "Obras"
+
+[tags]
+other = "Etiquetas"
+
+[language]
+other = "Español"

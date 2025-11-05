@@ -1,0 +1,14 @@
+copyright = "Droit d'auteur"
+allrightsreserved = 'Tous droits réservés'
+
+[about]
+other = "A Propos"
+
+[works]
+other = "Ouvres"
+
+[tags]
+other = "Mots-clés"
+
+[language]
+other = "Français"

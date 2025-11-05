@@ -1,0 +1,93 @@
+baseURL = '/'
+languageCode = 'en-US'
+title = 'Sebastien Sanz de Santamaria'
+subtitle = 'Product Owner, Web Developer, Cultural Producer'
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+disableDefaultLanguageRedirect = false
+disableLanguages = []
+disableHugoGeneratorInject = false
+
+[params]
+  logo = "https://jemmsuk.github.io/hugo-language-switcher/logo/langtest-logo-45x45px.png"
+
+[menus]
+  [[menus.main]]
+    identifier = 'about'
+    name = 'about'
+    url = 'about/'
+    weight = 10
+
+  [[menus.main]]
+    identifier = 'works'
+    name = 'works'
+    url = 'works/'
+    weight = 20
+
+  [[menus.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url  = 'tags/'
+    weight = 30
+
+  [[menus.main]]
+    identifier = 'language'
+    name = 'English'
+    # pre = '{{< svg-icon "bi-translate" >}}'
+    weight = 40
+[[menus.main]]
+    parent = "language"
+    name = 'English'
+    weight = 41
+[[menus.main]]
+    parent = "language"
+    name = 'Español'
+    weight = 42
+[[menus.main]]
+    parent = "language"
+    name = 'Français'
+    weight = 43
+
+[languages]
+  [languages.en]
+    languageCode = 'en-US'
+    languageName = 'English'
+    LanguageDirection = 'ltr'
+    timeZone = 'America/New_York'
+    title = 'Sebastien Sanz de Santamaria'
+    weight = 1
+    [languages.en.pagination]
+        path = 'page'
+    [languages.en.params]
+        subtitle = 'Product Owner, Full Stack Web Developer , Cultural Producer'
+  [languages.es]
+    languageCode = 'es-ES'
+    languageName = 'Español'
+    LanguageDirection = 'ltr'
+    timeZone = "America/Mexico_City"
+    title = 'Sebastien Sanz de Santamaria'
+    weight = 2
+    [languages.es.pagination]
+        path = 'página'
+    [languages.es.params]
+        subtitle = 'Product Owner, Desarrollador Web, Productor Cultural'
+    [languages.es.permalinks]
+        _posts = "/articulos/"
+        posts = "/articulos/:slug"
+  [languages.fr]
+    languageCode = 'fr-FR'
+    languageName = 'Français'
+    LanguageDirection = 'ltr'
+    timeZone = "Europe/Paris"
+    title = 'Sebastien Sanz de Santamaria'
+    weight = 3
+    [languages.fr.pagination]
+        path = 'page'
+    [languages.fr.params]
+        subtitle = 'Product Owner, Développeur Web, Producteur Culturel'
+  
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
