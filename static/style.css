@@ -1,10 +1,12 @@
 :root {
 	color-scheme: light dark;
     --background-color: #ffffff;
+    --txt-color: #36263f
 }
 
 html {
     font-family: Lato, sans-serif;
+    color: var(--txt-color)
 }
 
 body {
@@ -98,6 +100,10 @@ footer {
         --background-color: #36263f;
         --text-color: #f0f0f0;
         /* ... other dark theme variables ... */
+    }
+
+    body {
+color: var(--text-color);
     }
 
 }

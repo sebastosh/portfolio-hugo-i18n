@@ -84,7 +84,10 @@ disableHugoGeneratorInject = false
         path = 'page'
     [languages.fr.params]
         subtitle = 'Product Owner, Développeur Web, Producteur Culturel'
-  
+      [languages.fr.permalinks]
+        _works = "/ouvres/"
+        works = "/ouevres/:slug"
+
 [sitemap]
   changefreq = "weekly"
   priority = 0.5

@@ -5,6 +5,4 @@ date = 2023-03-15T00:00:00-07:00
 tags = ['ReactJS','ToneJS','NexusUI','Rails API','JWTAuth']
 +++
 
-Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
-
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.
+Una aplicación web diseñada para improvisar con varios sintetizadores. Los usuarios pueden crear una sesión y añadir uno o más módulos de sintetizador (actualmente disponibles: Mono Synth, Duo Synth y FM). Pueden tocar cada sintetizador con las teclas en pantalla o con el teclado del ordenador.
