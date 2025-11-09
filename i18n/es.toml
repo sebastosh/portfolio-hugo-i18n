@@ -7,6 +7,9 @@ other = "biografía"
 [works]
 other = "obras"
 
+[see-works]
+other = "todas las obras"
+
 [tags]
 other = "tags"
 

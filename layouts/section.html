@@ -1,8 +1,22 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+  <div class="content-grid">
+    {{ range site.RegularPages }}
+
+            <div>
+              <a href="{{ .Permalink }}" title="{{ .Title }}">
+                 <h2>{{ .LinkTitle }}</h2>
+        {{ if and (isset .Params "image") .Params.image }}
+            {{ $image := .Page.Resources.GetMatch .Params.image }}
+            {{ with $image }}
+                {{ $thumb := .Resize "400x" }}
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+            {{end}}
+                    {{ end }}
+            </a>
+            </div>
+
   {{ end }}
+  </div>
 {{ end }}

@@ -3,7 +3,7 @@
   {{ .Content }}
 
   <div class="content-grid">
-    {{ range first 6 (site.RegularPages) }}
+    {{ range first 6 (where .Site.RegularPages.ByTitle "Section" "works") }}
 
             <div>
               <a href="{{ .Permalink }}" title="{{ .Title }}">
@@ -21,6 +21,6 @@
   {{ end }}
   </div>
 
-<h2><a href="/works">More Works</a></h2>
+
 
 {{ end }}

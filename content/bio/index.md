@@ -1,14 +1,15 @@
 +++
 title = 'Bio'
+tye = 'bio'
 +++
 
-## Professional fueled by a passion for technology and working with cultural initiatives having a positiveimpact in our society
+# Professional fueled by a passion for technology and working with cultural initiatives having a positiveimpact in our society
 
-### Services
+## Services
 
 Product Owner, Product Manager, Full Stack Software Engineer, UI/UX & Print Designer, Data Analytics, Founder, Operations Director, Cultural Producer, Grant Writer, Teleprompter
 
-### Skills
+## Skills
 
 Product - Github, Notion, Jira, Trello, Plane, Figma, Adobe, Penpot, Ollama
 
