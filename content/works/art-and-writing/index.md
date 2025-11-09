@@ -1,11 +1,14 @@
 +++
 title = 'Arts & Writing'
+position = 'Manager, Web & Information Services'
+organization = 'Alliance for Young Artists & Writers'
+location = 'New York City, USA'
 image = 'artandwriting.png'
 date = 2025-05-01T00:00:00-06:00
+date-end = 2025-05-01T00:00:00-07:00
+externalurl = 'artandwriting.org'
 tags = ['product owner','product management','full stack','dev ops']
 +++
 
-Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
+a) Technical manager for all digital products of the Scholastic Art and Writing Awards, a national award for teens, with 25 categories in visual arts and literature. b) Product Owner of the Awards Portal which receives 300,000 applications; delivers 80,000 regional awards; and 3,000 national awards every year. c) Led the modernization of the Awards Management System within a team of design and engineering vendors. d) Maintained codebases and running services for the organization’s digital products. e) Provided on-demand data-analytics throughout the Scholastic Awards yearly seasons.
 
-
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.

@@ -1,21 +1,40 @@
 {{ define "main" }}
- {{ if and (isset .Params "image") .Params.image }}
+ 
+<div class="page">
 
-            {{ $image := .Page.Resources.GetMatch .Params.image }}
-            {{ with $image }}
-                {{ $thumb := .Resize "400x" }}
-                <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
-            {{end}}
+   {{ partial "work-pagination.html" . }}
 
-        {{ end }}
+  <div class="page-card">
+    <div class="page-image">
+      {{ if and (isset .Params "image") .Params.image }}
+
+      {{ $image := .Page.Resources.GetMatch .Params.image }}
+      {{ with $image }}
+      {{ $thumb := .Resize "400x" }}
+      <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+      {{end}}
+
+      {{ end }}
+    </div>
+
+    <div class="page-meta">
+
+      <h1>{{ .Title }}</h1>
+      <a href="https://{{ .Params.externalurl }}" target="_blank">{{ .Params.externalurl }}</a>
+
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format ":date_long" }}
+      <time datetime="{{ $dateMachine }}">{{ .Date.Format "2006" }}</time>
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+    </div>
 
 
-  <h1>{{ .Title }}</h1>
-
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  </div>
 
   {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+</div>
+
+
 {{ end }}

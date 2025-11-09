@@ -2,7 +2,8 @@
 title = 'Rivet'
 image = "rivet.jpg"
 date = 2018-06-01T00:00:00-06:00
-tags = ['Incubator', 'Entrepreneurship', 'Product Management', 'Product Design']
+date-end = 2021-06-01T00:00:00-06:00
+tags = ['Product Design','Product Management','Entrepreneurship','Incubator' ]
 +++
 
 Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.

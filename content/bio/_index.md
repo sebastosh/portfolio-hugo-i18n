@@ -1,12 +1,19 @@
 +++
-title = 'Sebastien Sanz de Santamaria'
-date = 2023-01-01T08:00:00-07:00
+title = 'Bio'
 +++
 
-Product Owner and Product Manager with experience in large scale web implementations, from design to implementation. Working in teams of up to 10 engineers, designers, and business owners. Maintenance of development and production environments. Jira, Trello, Git, AWS, Figma, Penpot, Notion
+## Professional fueled by a passion for technology and working with cultural initiatives having a positiveimpact in our society
 
-Full Stack Web Developer with low-level understanding of HTML, CSS, Javascript, Ruby, React, Ruby on Rails, Node.js, Gatsby, RESTful APIs, JSON, MySQL, PostgreSQL, MongoDB, PHP, Wordpress
+### Services
 
-Cultural Producer and Co-Founder with production and operations experience in arts, culture, and technology
+Product Owner, Product Manager, Full Stack Software Engineer, UI/UX & Print Designer, Data Analytics, Founder, Operations Director, Cultural Producer, Grant Writer, Teleprompter
 
-CDMX / Kingsbury, TX
+### Skills
+
+Product - Github, Notion, Jira, Trello, Plane, Figma, Adobe, Penpot, Ollama
+
+Engineering - Node, NextJS, React, SSR/SSG, Gatsby, Hugo, Ruby, Ruby on Rails, PHP, Wordpress, HTML, CSS; Git, CI/CD Pipelines, RESTful APIs; Cloud,  Micro Services, AWS, Cloudflare, Netlify, Vercel; Linux, Mac, Windows, Raspberry Pi
+
+Data - PostgreSQL, MariaDB, SQL Server; MongoDB, DynamoDB; Tableau, DBeaver, PHPMyAdmin
+
+#### Kingsbury, Texas | Ciudad de Mexico, MX

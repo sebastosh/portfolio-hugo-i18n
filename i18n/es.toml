@@ -1,8 +1,8 @@
 copyright = 'Derechos de autor'
 allrightsreserved = 'Reservados todos los derechos'
 
-[about]
-other = "acerca de"
+[bio]
+other = "biografía"
 
 [works]
 other = "obras"

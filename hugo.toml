@@ -15,7 +15,7 @@ disableHugoGeneratorInject = false
 [menus]
   [[menus.main]]
     identifier = 'works'
-    name = 'work'
+    name = 'works'
     url = 'works/'
     weight = 10
   [[menus.main]]
@@ -42,10 +42,6 @@ disableHugoGeneratorInject = false
         parent = "language"
         name = 'es'
         weight = 32
-    [[menus.main]]
-        parent = "language"
-        name = 'fr'
-        weight = 33
 
 [languages]
   [languages.en]
@@ -58,7 +54,7 @@ disableHugoGeneratorInject = false
     [languages.en.pagination]
         path = 'page'
     [languages.en.params]
-        subtitle = 'Product Owner, Full Stack Web Developer , Cultural Producer'
+        subtitle = 'Product Owner, Full Stack Web Developer, Cultural Producer'
   [languages.es]
     languageCode = 'es-MX'
     languageName = 'es 🇲🇽 '
@@ -73,20 +69,6 @@ disableHugoGeneratorInject = false
     [languages.es.permalinks]
         _works = "/obras/"
         works = "/obras/:slug"
-  [languages.fr]
-    languageCode = 'fr-FR'
-    languageName = 'fr 🇫🇷'
-    LanguageDirection = 'ltr'
-    timeZone = "Europe/Paris"
-    title = 'Sebastien Sanz de Santamaria'
-    weight = 3
-    [languages.fr.pagination]
-        path = 'page'
-    [languages.fr.params]
-        subtitle = 'Product Owner, Développeur Web, Producteur Culturel'
-      [languages.fr.permalinks]
-        _works = "/ouvres/"
-        works = "/ouevres/:slug"
 
 [sitemap]
   changefreq = "weekly"
