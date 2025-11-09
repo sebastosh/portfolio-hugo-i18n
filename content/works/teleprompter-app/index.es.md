@@ -1,5 +1,4 @@
 +++
-draft = true
 title = 'Teleprompter App'
 image = 'teleprompter-app.png'
 date = 2019-03-01T00:00:00-07:00

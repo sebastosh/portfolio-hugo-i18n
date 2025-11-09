@@ -1,5 +1,4 @@
 +++
-draft = true
 title = 'Teleprompter App'
 position = 'Tech Project'
 location = 'New York City, USA'
