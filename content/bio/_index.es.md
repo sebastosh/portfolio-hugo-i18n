@@ -2,9 +2,8 @@
 title = 'Biografia'
 type = 'bio'
 cv = '/bio/Sebastien-Sanz-de-Santamaria-cv-es.pdf'
+description = 'Profesional con una gran pasión por la tecnología y el trabajo con iniciativas culturales que generan un impacto positivo en nuestra sociedad'
 +++
-
-## Profesional con una gran pasión por la tecnología y el trabajo con iniciativas culturales que generan un impacto positivo en nuestra sociedad
 
 ## Servicios
 

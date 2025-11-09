@@ -2,9 +2,8 @@
 title = 'Bio'
 type = 'bio'
 cv = 'Sebastien-Sanz-de-Santamaria-cv-en.pdf'
+description = 'Professional fueled by a passion for technology and working with cultural initiatives having a positive impact in our society'
 +++
-
-## Professional fueled by a passion for technology and working with cultural initiatives having a positive impact in our society
 
 ## Services
 

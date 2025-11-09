@@ -30,9 +30,7 @@
   {{ else }}
   <!-- Regular Menu Items -->
 
-  <a href="{{ .URL | relLangURL }}" aria-current="page" aria-label="{{ i18n .Identifier | default .Name }}">
-    {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
-  </a>
+  <a href="{{ .URL | relLangURL }}" aria-current="page" aria-label="{{ i18n .Identifier | default .Name }}">{{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}</a>
 
   {{ end }}
   {{ end }}

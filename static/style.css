@@ -175,6 +175,10 @@ main img {
 
 }
 
+.work-image {
+    border: 1px solid var(--heading-color);
+}
+
 .page-meta {
         flex-grow: 1;
     margin-left: 25px;
