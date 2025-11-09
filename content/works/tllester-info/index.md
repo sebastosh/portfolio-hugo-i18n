@@ -1,7 +1,10 @@
 +++
 title = 'tllester.info'
+position = 'Web Developer'
+location = 'Mexico City, MEX'
 image = 'tllester-info.png'
 date = 2025-10-01T00:00:00-06:00
+externalurl = 'tllester.info'
 tags = ['product owner','product management','full stack','dev ops']
 +++
 

@@ -32,7 +32,6 @@ disableHugoGeneratorInject = false
   [[menus.main]]
     identifier = 'language'
     name = 'en'
-    # pre = '{{< svg-icon "bi-translate" >}}'
     weight = 30
     [[menus.main]]
         parent = "language"

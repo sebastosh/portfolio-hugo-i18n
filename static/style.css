@@ -189,9 +189,10 @@ main img {
     flex-wrap: wrap;
 }
 
-.work-tag a {
+.work-tag span {
     margin: 5px;
     padding: 4px;
+    color: var(--heading-color);
     border: 1px solid var(--heading-color);
 }
 

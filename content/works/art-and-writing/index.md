@@ -1,7 +1,7 @@
 +++
-title = 'Arts & Writing'
+title = 'Awards Portal'
 position = 'Manager, Web & Information Services'
-organization = 'Alliance for Young Artists & Writers'
+organization = 'Scholastic Art and Writing Awards - Alliance for Young Artists & Writers'
 location = 'New York City, USA'
 image = 'artandwriting.png'
 date = 2025-05-01T00:00:00-06:00

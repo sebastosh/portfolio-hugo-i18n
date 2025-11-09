@@ -14,7 +14,8 @@ For a given taxonomy, renders a list of terms assigned to the page.
 
     <div class="work-tag">
       {{- range . }}
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        {{/*  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>  */}}
+        <span>{{ .LinkTitle }}</span>
       {{- end }}
     </div>
 

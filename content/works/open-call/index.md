@@ -1,8 +1,10 @@
 +++
 title = 'Open Call'
+position = 'Tech Project'
+location = 'New York City, USA'
 image = "open-call.jpg"
 date = 2019-04-01T00:00:00-07:00
-slug = 'open-call'
+github = 'https://github.com/sebastosh/open-call'
 tags = ['ReactJS','Rails API','JWT','AWS S3']
 +++
 

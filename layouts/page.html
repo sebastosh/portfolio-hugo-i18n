@@ -20,16 +20,28 @@
     <div class="page-meta">
 
       <h1>{{ .Title }}</h1>
+
+        {{ if .Params.organization }}
+{{ .Params.organization }} 
+        {{ end }}
       
-      <a href="https://{{ .Params.externalurl }}" target="_blank">{{ .Params.externalurl }}</a>
       <div>
-         {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-      <time datetime="{{ $dateMachine }}">{{ .Date.Format "2006" }}</time>
-     
+        {{ .Params.position }} - <em>{{ .Params.location }}</em> - 
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        <time datetime="{{ $dateMachine }}">{{ .Date.Format "2006" }}</time>
       </div>
 
-        
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+
+  {{ if .Params.externalurl }}
+      
+      <div>🌐 <a href="https://{{ .Params.externalurl }}" target="_blank">{{ .Params.externalurl }}</a></div>
+  
+   {{ else if .Params.github }}
+   <div><a href="{{ .Params.github }}" target="_blank">{{ .Params.github }}</a></div>
+  
+      {{ end }}
 
           {{ .Content }}
     </div>

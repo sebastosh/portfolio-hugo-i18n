@@ -5,7 +5,7 @@
   <div class="content-grid">
     {{ range first 6 (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "works")) }}
 {{/*  {{ range (sort .Pages "Date" "desc" (where .Site.Pages ".Params.private" "!=" false))}}  */}}
-            <div>
+            <div class="content-card">
               <a href="{{ .Permalink }}" title="{{ .Title }}">
                  <h2>{{ .LinkTitle }}</h2>
         {{ if and (isset .Params "image") .Params.image }}

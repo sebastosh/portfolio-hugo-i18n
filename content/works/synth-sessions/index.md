@@ -1,7 +1,10 @@
 +++
 title = 'Synth Sessions'
+position = 'Tech Project'
+location = 'New York City, USA'
 image = "synth-sessions.png"
 date = 2019-07-01T00:00:00-07:00
+github = 'https://github.com/sebastosh/synth-session'
 tags = ['ReactJS','ToneJS','NexusUI','Rails API','JWTAuth']
 +++
 
@@ -13,11 +16,10 @@ Key Technologies, Packages, and Gems:
 
 Frontend:
 
-- React.js
+- React
 - Tone.js
 - nexusUI
 - react-select
-- Back End
 
 Backend:
 
