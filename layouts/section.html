@@ -2,7 +2,9 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   <div class="content-grid">
-    {{ range site.RegularPages }}
+    {{/*  {{ range site.RegularPages  }}  */}}
+        {{ range (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages ".Params.draft" "!=" true)) }}
+
 
             <div>
               <a href="{{ .Permalink }}" title="{{ .Title }}">

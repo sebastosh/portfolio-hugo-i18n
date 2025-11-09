@@ -1,0 +1,10 @@
+{{ define "main" }}     
+ <div class="bio">
+  <div id="resume">
+    <h1>{{ .Title }}</h1>
+    <a href="{{ .Params.cv }}">{{ T "resume" | default "Resume" }} <img src="/bio/download-pdf-icon.svg" alt={{ T "resume" | default "Resume" }}></a>
+  </div>
+
+   {{ .Content }}
+ </div>
+{{ end }}

@@ -5,7 +5,13 @@ date = 2025-10-01T00:00:00-06:00
 tags = ['product owner','product management','full stack','dev ops']
 +++
 
-Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
+[Todd Lanier Lester](https://tllester.info) is an artist and works on the family farm in Tennessee. Over two decades he launched a series of three rights-focused, participatory works situated between visual media and performance methodology.
 
+This projects consists of migrating a dozen WordPress websites into a modern static site using Hugo as a static site generator and Tina CMS for content management, and deploying the static site to Cloudflare Workers through a Github CI/CD pipeline.
 
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.
+Key Responsibilities:
+
+- Migration of WordPress Websites: Develop tools and scripts to automate the migration process from WordPress to Hugo. This includes importing post, page, category, tag, custom fields, media files, and other relevant data. 
+- Content Management with Tina CMS: Integrate Tina CMS into the website, allowing users to manage content through a user-friendly interface. Ensure proper integration of Tina CMS with the existing site structure.
+- Static Site Generation: Use Hugo to generate static HTML from the migrated content, ensuring that the website is optimized for performance and SEO.
+- Deployment to Cloudflare Workers: Set up a CI/CD pipeline to automate the deployment process. This involves building the static site using Hugo and deploying it to Cloudflare Workers, ensuring that the site is accessible through [https://tllester.info](https://tllester.info).

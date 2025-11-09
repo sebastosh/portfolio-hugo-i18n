@@ -1,13 +1,11 @@
 +++
-title = 'Arts & Writing'
-position = 'Manager, Web & Information Services'
-organization = 'Alliance for Young Artists & Writers'
+title = 'Luv til` it hurts'
+position = 'Freelance'
 location = 'New York City, USA'
-image = 'artandwriting.png'
-date = 2025-05-01T00:00:00-06:00
-date-end = 2025-05-01T00:00:00-07:00
-externalurl = 'artandwriting.org'
-tags = ['product owner','product management','full stack','dev ops']
+image = 'luvtilithurts.png'
+date = 2020-10-01T00:00:00-06:00
+externalurl = 'https://luvtilithurts.co/'
+tags = ['Wordpress', 'Gatsby', 'Netlify','Online Exhibition']
 +++
 
 - Technical manager for all digital products of the Scholastic Art and Writing Awards, a national award for teens, with 25 categories in visual arts and literature. 

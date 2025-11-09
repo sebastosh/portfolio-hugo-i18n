@@ -1,9 +1,10 @@
 +++
 title = 'Bio'
-tye = 'bio'
+type = 'bio'
+cv = 'Sebastien-Sanz-de-Santamaria-cv-en.pdf'
 +++
 
-# Professional fueled by a passion for technology and working with cultural initiatives having a positiveimpact in our society
+## Professional fueled by a passion for technology and working with cultural initiatives having a positive impact in our society
 
 ## Services
 
@@ -17,4 +18,4 @@ Engineering - Node, NextJS, React, SSR/SSG, Gatsby, Hugo, Ruby, Ruby on Rails, P
 
 Data - PostgreSQL, MariaDB, SQL Server; MongoDB, DynamoDB; Tableau, DBeaver, PHPMyAdmin
 
-#### Kingsbury, Texas | Ciudad de Mexico, MX
+Based in Kingsbury, Texas & CDMX, Mexico

@@ -1,10 +1,10 @@
 +++
 title = 'Biografia'
-date = 2023-01-01T08:00:00-07:00
+type = 'bio'
+cv = '/bio/Sebastien-Sanz-de-Santamaria-cv-es.pdf'
 +++
 
-
-# Profesional con una gran pasión por la tecnología y el trabajo con iniciativas culturales que generan un impacto positivo en nuestra sociedad.
+## Profesional con una gran pasión por la tecnología y el trabajo con iniciativas culturales que generan un impacto positivo en nuestra sociedad
 
 ## Servicios
 
@@ -18,4 +18,4 @@ Ingeniería: Node, NextJS, React, SSR/SSG, Gatsby, Hugo, Ruby, Ruby on Rails, PH
 
 Datos: PostgreSQL, MariaDB, SQL Server; MongoDB, DynamoDB; Tableau, DBeaver, PHPMyAdmin
 
-#### Kingsbury, Texas | Ciudad de México, MX
+Based in Kingsbury, Texas & CDMX, Mexico

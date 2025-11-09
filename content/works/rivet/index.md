@@ -1,11 +1,17 @@
 +++
 title = 'Rivet'
 image = "rivet.jpg"
-date = 2018-06-01T00:00:00-06:00
+date = 2020-06-01T00:00:00-06:00
 date-end = 2021-06-01T00:00:00-06:00
 tags = ['Product Design','Product Management','Entrepreneurship','Incubator' ]
 +++
 
-Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
+Rivet is a unified search platform designed to help you find and activate opportunities to advance your creative practice.
 
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.
+Rivet was founded in 2016 by Katrina Neumann, Sebastien Sanz de Santamaria & Kira Simon-Kennedy; with support from NEW INC, New Museum’s cultural incubator, and Made in NY Media Center by IFP.
+
+Key Responsibilities:
+
+- Creation of a digital marketplace/billboard of creative and cultural opportunities worldwide.
+- Product design and creation of the MVP.
+- Product management and collaboration with engineering in development of a full-stack app in Flask.

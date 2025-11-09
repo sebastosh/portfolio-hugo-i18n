@@ -1,10 +1,34 @@
 +++
+draft = true
 title = 'Teleprompter App'
 image = 'teleprompter-app.png'
-date = 2023-03-15T00:00:00-07:00
+date = 2019-03-01T00:00:00-07:00
 tags = ['JavaScript', 'QuillJS','Rails API']
 +++
 
-Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
 
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.
+A web based teleprompter interface allowing a speaker to read scripts on camera or to a live audience.
+
+Using Vanilla Javascript to create an interactive single page application through DOM manipulation, incorporating QuillJS library to invoke a WYSIWYG word processing editor with full CRUD capability. Ruby on Rails API backend used for document saving.
+
+Built at [@flatiron-school](https://github.com/flatiron-school) with [@mmcgovern0](https://github.com/mmcgovern0) and [@jmhill91](https://github.com/jmhill91).
+
+## Key Technologies, Packages, and Gems
+
+- Front End
+
+  - Javascript
+  - QuillJS
+  - HTML, CSS
+
+- Back End
+  - Rails 5 API
+  - Postgres database
+
+## Core Features
+
+- User can access and perform full crud on all scripts from the database.
+- A user can create a new script.
+- Each script can be edited in a QuillJS WYSIWYG word processing editor module.
+- Each script can switched to prompt mode.
+- Scrolling currently is set at a fixed speed and is activated by pressing the "Return" key on the computer keyboard.

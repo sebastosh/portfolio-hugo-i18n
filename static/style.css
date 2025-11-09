@@ -3,6 +3,7 @@
     --background-color: #ffffff;
     --txt-color: #36263f;
     --heading-color: #F64141;
+    --a-color: #f6cc41;
 }
 
 html {
@@ -29,7 +30,11 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(237, 163, 65);
+    color:var(--a-color);
+}
+
+a:active {
+    color:var(--a-color);
 }
 
 header {
@@ -64,7 +69,7 @@ nav>* {
     display: none;
     position: absolute;
     background-color: var(--background-color);
-    border: 1px solid #F64141;
+    border: 1px solid var(--heading-color);
     z-index: 1;
     width: 70px;
 }
@@ -104,15 +109,6 @@ main img {
     object-fit: cover;
 }
 
-.content-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-
-
 .pagination {   
      display: flex;
     justify-content: space-between;
@@ -123,17 +119,55 @@ main img {
     border-bottom: 1px solid;
 }
 
-.previous {
-
-}
 .pagination-title {
     font-weight: 900;
     font-size: 1.4em;
  
 }
-.next {
+
+.bio {
+    margin-top: 1em;
+}
+
+.bio #resume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 2em;
+}
+
+.bio #resume h1 {
+ margin: 0;
 
 }
+
+.bio #resume a {
+    width: max-content;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid;
+    padding: 10px 15px;
+
+}
+
+.bio img {
+    width: revert;
+    height: revert;
+    border: none !important;
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
+
+
 
 .page-card{
        display: flex;
@@ -144,6 +178,25 @@ main img {
 .page-meta {
         flex-grow: 1;
     margin-left: 25px;
+}
+
+.work-tag {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-tag a {
+    margin: 5px;
+    padding: 4px;
+    border: 1px solid var(--heading-color);
+}
+
+.more {
+    margin: 1.3em 0 1em 0;
+    padding: .7em;
+    border: 1px solid var(--heading-color);
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 footer {

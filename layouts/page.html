@@ -20,19 +20,24 @@
     <div class="page-meta">
 
       <h1>{{ .Title }}</h1>
+      
       <a href="https://{{ .Params.externalurl }}" target="_blank">{{ .Params.externalurl }}</a>
-
-      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-      {{ $dateHuman := .Date | time.Format ":date_long" }}
+      <div>
+         {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
       <time datetime="{{ $dateMachine }}">{{ .Date.Format "2006" }}</time>
-        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+     
+      </div>
 
+        
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+          {{ .Content }}
     </div>
 
 
   </div>
 
-  {{ .Content }}
+
 
 </div>
 

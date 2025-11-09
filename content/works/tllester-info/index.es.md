@@ -5,7 +5,16 @@ date = 2025-10-01T00:00:00-06:00
 tags = ['product owner','product management','full stack','dev ops', ]
 +++
 
-Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
+[Todd Lanier Lester](https://tllester.info) es artista y trabaja en la granja familiar en Tennessee. Durante más de dos décadas, ha desarrollado una serie de tres obras participativas centradas en los derechos, que se sitúan entre los medios visuales y la metodología performativa.
 
+Este proyecto consiste en migrar una docena de sitios web de WordPress a un sitio estático moderno utilizando Hugo como generador de sitios estáticos y Tina CMS para la gestión de contenidos, e implementar dicho sitio en Cloudflare Workers mediante una canalización CI/CD de GitHub.
 
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.
+Responsabilidades principales:
+
+- Migración de sitios web de WordPress: Desarrollar herramientas y scripts para automatizar el proceso de migración de WordPress a Hugo. Esto incluye la importación de entradas, páginas, categorías, etiquetas, campos personalizados, archivos multimedia y otros datos relevantes.
+
+- Gestión de contenidos con Tina CMS: Integrar Tina CMS en el sitio web, permitiendo a los usuarios gestionar el contenido a través de una interfaz intuitiva. Garantizar la correcta integración de Tina CMS con la estructura existente del sitio.
+
+- Generación de sitios estáticos: Utilizar Hugo para generar HTML estático a partir del contenido migrado, asegurando que el sitio web esté optimizado para el rendimiento y el SEO.
+
+- Despliegue en Cloudflare Workers: Configure una canalización de CI/CD para automatizar el proceso de despliegue. Esto implica compilar el sitio estático con Hugo y desplegarlo en Cloudflare Workers, asegurando que el sitio sea accesible a través de https://tllester.info.

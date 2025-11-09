@@ -10,7 +10,7 @@ disableLanguages = []
 disableHugoGeneratorInject = false
 
 [params]
-  logo = "https://jemmsuk.github.io/hugo-language-switcher/logo/langtest-logo-45x45px.png"
+  logo = ''
 
 [menus]
   [[menus.main]]
@@ -22,7 +22,7 @@ disableHugoGeneratorInject = false
     identifier = 'bio'
     name = 'bio'
     url = 'bio/'
-    weight = 10
+    weight = 20
   # [[menus.main]]
   #   identifier = 'tags'
   #   name = 'tags'
@@ -55,6 +55,7 @@ disableHugoGeneratorInject = false
         path = 'page'
     [languages.en.params]
         subtitle = 'Product Owner, Full Stack Web Developer, Cultural Producer'
+        more = 'more'
   [languages.es]
     languageCode = 'es-MX'
     languageName = 'es 🇲🇽 '
@@ -66,6 +67,7 @@ disableHugoGeneratorInject = false
         path = 'página'
     [languages.es.params]
         subtitle = 'Product Owner, Desarrollador Web, Productor Cultural'
+        more = 'mas'
     [languages.es.permalinks]
         _works = "/obras/"
         works = "/obras/:slug"
