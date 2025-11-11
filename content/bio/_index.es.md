@@ -1,7 +1,7 @@
 +++
 title = 'Biografia'
 type = 'bio'
-cv = '/bio/Sebastien-Sanz-de-Santamaria-cv-es.pdf'
+resume = '/bio/Sebastien-Sanz-de-Santamaria-cv-es.pdf'
 +++
 
 ## Servicios

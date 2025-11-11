@@ -45,7 +45,7 @@ h4,
 h5,
 h6 {
     color: var(--txt-color);
-    margin: 1.5em 0;
+    /* margin: 1.5em 0; */
 }
 
 /* Header */
@@ -55,6 +55,7 @@ header {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    margin: 1em 0 0;
 }
 
 .title h1 {
@@ -62,7 +63,7 @@ header {
 }
 .title p {
     margin: 0;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 nav>* {
@@ -120,11 +121,23 @@ main {
     align-items: center;
 }
 
+main h1 {
+    width: 100%;
+    text-align: center;
+    padding: .5em 0;
+    margin-bottom: 1em;
+    border-bottom: 1px solid;
+}
+
 .bio {
     margin-top: 1em;
 }
 
-/* From Uiverse.io by Creatlydev */ 
+.bio #resume h1 {
+    margin: 0;
+
+}
+
 .button {
   line-height: 1;
   background-color: transparent;
@@ -166,18 +179,6 @@ main {
 
 
 
-.resume-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em 0 2em;
-}
-
-.bio #resume h1 {
-    margin: 0;
-
-}
-
 .bio #resume a {
     width: max-content;
     display: flex;
@@ -209,29 +210,12 @@ main img {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    align-items: flex-end;
-    padding: .5em 0;
-    margin-bottom: 2em;
-    border-bottom: 1px solid;
+    align-items: center;
+    align-content: center;
+    margin: 0 0 2em;
 }
 
-.pagination-title {
-    font-weight: 600;
-    font-size: 1.8em;
 
-}
-
-.section-title {
-    width: 100%;
-    padding: .2em 0;
-    margin-bottom: 1em;
-
-    border-bottom: 1px solid;
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 1.8em;
-}
 
 /* Work Grid */
 
@@ -250,6 +234,11 @@ display: flex;
 }
 
 /* page.html */
+
+.page-title {
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+}
 
 .page-card {
     display: flex;
@@ -270,7 +259,7 @@ display: flex;
     justify-content: space-between;
 }
 
-.page-meta h1 {
+.page-meta h2 {
     margin: 0;
 }
 

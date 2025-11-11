@@ -1,34 +1,21 @@
+
+
+
+
 {{ if or .NextInSection .PrevInSection }}
 <div class="pagination">
 
         {{ if .NextInSection }}
-        <span class="previous">
-            <a href="{{ .NextInSection.Permalink }}">
+
+            <a class="previous" href="{{ .NextInSection.Permalink }}">
                 <span class="button__icon">←</span>
                 <span class="button__text">{{ .NextInSection.Title }}</span>
             </a>
-        </span>
+
        
         {{ end }}
-            <div class="pagination-title">
+    
 
-  {{ $currentPage := . }}
-
-  {{ range .Site.Menus.main }}
-  {{ if eq .Identifier "works" }}
-
-  <!-- Regular Menu Items -->
-
-  <a class="nav-link {{ if or ($currentPage.IsMenuCurrent " main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{
-    end }}" href="{{ .URL | relLangURL }}" aria-current="page" aria-label="{{ i18n .Identifier | default .Name }}">
-    {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
-  </a>
-
-  {{ end }}
-  {{ end }}
-
-
-    </div>
         {{ if .PrevInSection }}
  
             <a class="next" href="{{ .PrevInSection.Permalink }}">

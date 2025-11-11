@@ -1,6 +1,20 @@
 {{ define "main" }}
+
+  {{ $currentPage := . }}
+
+  {{ range .Site.Menus.main }}
+  {{ if eq .Identifier "works" }}
+
+  <!-- Regular Menu Items -->
+
+ <h1 class="page-title">{{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}</h1>
+
+
+  {{ end }}
+  {{ end }}
+{{ partial "work-pagination.html" . }}
   <div class="page">
-    {{ partial "work-pagination.html" . }}
+    
 
     <div class="page-card">
       <div class="page-image">
@@ -17,11 +31,11 @@
 
       <div class="page-meta">
         {{ if .Params.externalurl }}
-          <h1>🔗 <a href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a></h1>
+          <h2>🔗 <a href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a></h2>
         {{ else if .Params.github }}
-          <h1>🔗 <a href="{{ .Params.github }}" target="_blank">{{ .Title }}</a></h1>
+          <h2>🔗 <a href="{{ .Params.github }}" target="_blank">{{ .Title }}</a></h2>
         {{ else }}
-          <h1>{{ .Title }}</h1>
+          <h2>{{ .Title }}</h2>
         {{ end }}
 
         {{ if .Params.organization }}
