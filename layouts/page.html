@@ -19,13 +19,11 @@
     <div class="page-card">
       <div class="page-image">
         {{ if and (isset .Params "image") .Params.image }}
-
-        {{ $image := .Page.Resources.GetMatch .Params.image }}
-        {{ with $image }}
-        {{ $thumb := .Resize "400x" }}
-        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="work-image">
-        {{end}}
-
+          {{ $image := .Page.Resources.GetMatch .Params.image }}
+          {{ with $image }}
+          {{ $thumb := .Resize "400x" }}
+          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="work-image">
+          {{end}}
         {{ end }}
       </div>
 
