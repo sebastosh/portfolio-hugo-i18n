@@ -1,6 +1,5 @@
 +++
 title = 'Sebastien Sanz de Santamaria'
-date = 2023-01-01T08:00:00-07:00
+description = 'Product Owner, Desarrollador Web, Productor Cultural'
+date = 2025-11-11T08:00:00-07:00
 +++
-
-## Product Owner, Desarrollador Web, Productor Cultural

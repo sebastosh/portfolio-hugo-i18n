@@ -1,57 +1,58 @@
 {{ define "main" }}
- 
-<div class="page">
+  <div class="page">
+    {{ partial "work-pagination.html" . }}
 
-   {{ partial "work-pagination.html" . }}
+    <div class="page-card">
+      <div class="page-image">
+        {{ if and (isset .Params "image") .Params.image }}
 
-  <div class="page-card">
-    <div class="page-image">
-      {{ if and (isset .Params "image") .Params.image }}
+        {{ $image := .Page.Resources.GetMatch .Params.image }}
+        {{ with $image }}
+        {{ $thumb := .Resize "400x" }}
+        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="work-image">
+        {{end}}
 
-      {{ $image := .Page.Resources.GetMatch .Params.image }}
-      {{ with $image }}
-      {{ $thumb := .Resize "400x" }}
-      <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="work-image">
-      {{end}}
-
-      {{ end }}
-    </div>
-
-    <div class="page-meta">
-
-      <h1>{{ .Title }}</h1>
-
-        {{ if .Params.organization }}
-{{ .Params.organization }} 
         {{ end }}
-      
-      <div>
-        {{ .Params.position }} - <em>{{ .Params.location }}</em> - 
-        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-        <time datetime="{{ $dateMachine }}">{{ .Date.Format "2006" }}</time>
       </div>
 
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      <div class="page-meta">
+        {{ if .Params.externalurl }}
+          <h1>🔗 <a href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a></h1>
+        {{ else if .Params.github }}
+          <h1>🔗 <a href="{{ .Params.github }}" target="_blank">{{ .Title }}</a></h1>
+        {{ else }}
+          <h1>{{ .Title }}</h1>
+        {{ end }}
 
+        {{ if .Params.organization }}
+        <div>{{ .Params.organization }}</div>
+        {{ end }}
 
-  {{ if .Params.externalurl }}
-      
-      <div>🌐 <a href="https://{{ .Params.externalurl }}" target="_blank">{{ .Params.externalurl }}</a></div>
-  
-   {{ else if .Params.github }}
-   <div><a href="{{ .Params.github }}" target="_blank">{{ .Params.github }}</a></div>
-  
-      {{ end }}
+        {{ if .Params.position }}
+        <div>{{ .Params.position }}</div>
+        {{ end }}
 
-          {{ .Content }}
+                    {{ if .Date }}
+          <div>
+            {{ if .Params.location }}
+              <em>{{ .Params.location }}</em>
+            {{ end }}
+            {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $startdateMachine := .Params.datestart | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ if .Params.datestart }}
+              (<time datetime="{{ $startdateMachine }}">{{ .Params.datestart.Format "Jan 2006" }}</time> - <time datetime="{{ $dateMachine }}">{{ .Date.Format "Jan 2006" }}</time>)
+            {{ else }}
+              (<time datetime="{{ $dateMachine }}">{{ .Date.Format "Jan 2006" }}</time>)
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      </div>
     </div>
 
-
+    <div class="content">
+      {{ .Content }}
+    </div>
   </div>
-
-
-
-</div>
-
-
 {{ end }}

@@ -1,11 +1,11 @@
 +++
-title = 'Awards Portal'
+title = 'Art & Writing Awards'
 position = 'Manager, Web & Information Services'
-organization = 'Scholastic Art and Writing Awards - Alliance for Young Artists & Writers'
+organization = 'Alliance for Young Artists & Writers'
 location = 'New York City, USA'
 image = 'artandwriting.png'
+datestart = 2020-07-01T00:00:00-07:00
 date = 2025-05-01T00:00:00-06:00
-date-end = 2025-05-01T00:00:00-07:00
 externalurl = 'artandwriting.org'
 tags = ['product owner','product management','full stack','dev ops']
 +++

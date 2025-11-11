@@ -1,41 +1,54 @@
 :root {
     color-scheme: light dark;
-    --background-color: #ffffff;
-    --txt-color: #36263f;
-    --heading-color: #F64141;
-    --a-color: #f6cc41;
+    --bg-color: #ffffff;
+    --txt-color: #252525;
+    --a-color: #696969;
+    --ahover-color: #5a5a5a;
+    color: #252525;
 }
 
 html {
+    background-color: var(--bg-color);
     font-family: Lato, sans-serif;
     color: var(--txt-color);
     font-weight: 300;
 }
 
 body {
-    width: 820px;
     height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2% auto;
-    background-color: var(--background-color);
+    margin: 2% 10%;
+    background-color: var(--bg-color);
     justify-content: space-between;
 }
 
 a,
 a:visited {
     text-decoration: none;
-    color: var(--heading-color);
+    color: var(--a-color);
 }
 
 a:hover {
-    color:var(--a-color);
+    color: var(--ahover-color);
 }
 
 a:active {
-    color:var(--a-color);
+    color: var(--ahover-color);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--txt-color);
+    margin: 1.5em 0;
+}
+
+/* Header */
 
 header {
     display: flex;
@@ -44,17 +57,23 @@ header {
     align-items: center;
 }
 
-.header-title {
-    display: block;
-    color: var(--heading-color);
+.title h1 {
+    margin: 0;
+}
+.title p {
+    margin: 0;
+    font-size: 1.4em;
 }
 
-
 nav>* {
-    border: 1px solid var(--heading-color);
+    border: 1px solid var(--a-color);
     margin-left: 0.67em;
     padding: 10px 10px;
     font-size: 20px;
+}
+
+nav>a:hover {
+    border: 1px solid var(--ahover-color);
 }
 
 
@@ -68,68 +87,86 @@ nav>* {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--background-color);
-    border: 1px solid var(--heading-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--ahover-color);
     z-index: 1;
-    width: 70px;
+    width: 72px;
 }
 
 .dropdown-content a {
     padding: 10px 12px;
+    color: var(--ahover-color);
     text-decoration: none;
     display: block;
     font-size: 18px;
 }
 
 .dropdown-content a:hover {
-    background-color: var(--background-color);
-    color: var(--heading-color);
+    background-color: var(--bg-color);
+    color: var(--ahover-color);
+
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+/* Main */
+
 main {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-main h1,
-main h2 {
-    color: var(--heading-color);
-}
-
-main img {
-    width: 250px;
-    height: 250px;
-    border: 1px solid;
-    object-fit: cover;
-}
-
-.pagination {   
-     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    padding: 1em 0;
-    margin-bottom: 1em;
-    border-bottom: 1px solid;
-}
-
-.pagination-title {
-    font-weight: 900;
-    font-size: 1.4em;
- 
 }
 
 .bio {
     margin-top: 1em;
 }
 
-.bio #resume {
+/* From Uiverse.io by Creatlydev */ 
+.button {
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.75em 1.5em;
+  padding-right: 1.25em;
+  color: #fff;
+  border: none !important;
+  font-weight: 700;
+  border-radius: 2em;
+  font-size: 1rem;
+  box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+  transition: transform 0.3s;
+
+  background: linear-gradient(
+    90deg,
+    rgb(129, 150, 240) 0%,
+    rgb(43, 105, 181) 100%
+  );
+}
+
+.button__icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.button:hover {
+  border-color: #f4f5f2;
+}
+
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+}
+
+
+
+
+.resume-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,7 +174,7 @@ main img {
 }
 
 .bio #resume h1 {
- margin: 0;
+    margin: 0;
 
 }
 
@@ -157,31 +194,84 @@ main img {
     border: none !important;
 }
 
-.content-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+main .page {
+    width: 100%;
 }
 
+main img {
+    border: 1px solid;
+}
 
+/* Work pagination */
 
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    padding: .5em 0;
+    margin-bottom: 2em;
+    border-bottom: 1px solid;
+}
 
+.pagination-title {
+    font-weight: 600;
+    font-size: 1.8em;
 
+}
 
-.page-card{
-       display: flex;
-       justify-content: space-between;
+.section-title {
+    width: 100%;
+    padding: .2em 0;
+    margin-bottom: 1em;
+
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+/* Work Grid */
+
+.content-grid {
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.grid-card-title {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 24px;
+}
+
+/* page.html */
+
+.page-card {
+    display: flex;
+    justify-content: space-between;
 
 }
 
 .work-image {
-    border: 1px solid var(--heading-color);
+    border: 1px solid;
 }
 
 .page-meta {
-        flex-grow: 1;
+    flex-grow: 1;
     margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.page-meta h1 {
+    margin: 0;
 }
 
 .work-tag {
@@ -192,31 +282,60 @@ main img {
 .work-tag span {
     margin: 5px;
     padding: 4px;
-    color: var(--heading-color);
-    border: 1px solid var(--heading-color);
+    color: var(--txt-color);
+    border: 1px solid var(--txt-color);
+}
+
+.content {
+    margin: 2em;
+    line-height: 1.5;
 }
 
 .more {
     margin: 1.3em 0 1em 0;
     padding: .7em;
-    border: 1px solid var(--heading-color);
+    border: 1px solid var(--txt-color);
     font-size: 1.5em;
     font-weight: bold;
 }
+
+/* footer.html */
 
 footer {
     text-align: center;
 }
 
+/* Dark Mode */
+
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #36263f;
-        --text-color: #f0f0f0;
-        /* ... other dark theme variables ... */
+        color-scheme: light;
+        --bg-color: #252525;
+        --txt-color: #ffffff;
+        --txt-color: #2e5d8f;
+        --a-color: #4789cf;
+        --ahover-color: #4762cf;
+        color: #252525;
     }
 
-    body {
-        color: var(--text-color);
+    body>* {
+        color: var(--txt-color);
+    }
+
+    a,
+    a:visited {
+        color: var(--a-color);
+    }
+
+    a:hover {
+        color: var(--ahover-color);
+    }
+
+    .work-tag span {
+        margin: 5px;
+        padding: 4px;
+        color: var(--a-color);
+        border: 1px solid var(--a-color);
     }
 
 }

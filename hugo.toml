@@ -1,7 +1,7 @@
 baseURL = 'https://sebastiensanzdesantamaria.net'
 languageCode = 'en-US'
 title = 'Sebastien Sanz de Santamaria'
-subtitle = 'Product Owner, Web Developer, Cultural Producer'
+description = 'Product Owner, Web Developer, Cultural Producer'
 
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
@@ -10,17 +10,17 @@ disableLanguages = []
 disableHugoGeneratorInject = false
 
 [params]
-  logo = ''
+  description = '1234'
 
 [menus]
   [[menus.main]]
     identifier = 'works'
-    name = 'works'
+    name = 'Works'
     url = 'works/'
     weight = 10
   [[menus.main]]
     identifier = 'bio'
-    name = 'bio'
+    name = 'Bio'
     url = 'bio/'
     weight = 20
   # [[menus.main]]
@@ -53,11 +53,12 @@ disableHugoGeneratorInject = false
     [languages.en.pagination]
         path = 'page'
     [languages.en.params]
-        subtitle = 'Product Owner, Full Stack Web Developer, Cultural Producer'
-        more = 'more'
+        description = 'Product Owner, Full Stack Web Developer, Cultural Producer'
+        latest = 'Latest'
+        more = 'More'
   [languages.es]
     languageCode = 'es-MX'
-    languageName = 'es 🇲🇽 '
+    languageName = 'es 🇲🇽'
     LanguageDirection = 'ltr'
     timeZone = "America/Mexico_City"
     title = 'Sebastien Sanz de Santamaria'
@@ -65,8 +66,9 @@ disableHugoGeneratorInject = false
     [languages.es.pagination]
         path = 'página'
     [languages.es.params]
-        subtitle = 'Product Owner, Desarrollador Web, Productor Cultural'
-        more = 'mas'
+        description = 'Product Owner, Desarrollador Web, Productor Cultural'
+        latest = 'Utimas'
+        more = 'Mas'
     [languages.es.permalinks]
         _works = "/obras/"
         works = "/obras/:slug"

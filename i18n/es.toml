@@ -1,13 +1,14 @@
 copyright = 'Derechos de autor'
 allrightsreserved = 'Reservados todos los derechos'
-more = 'mas'
-resume = 'currículum vitae'
+latest = 'Ultimas'
+more = 'Mas'
+resume = 'Currículum Vitae'
 
 [bio]
-other = "biografía"
+other = "Biografía"
 
 [works]
-other = "obras"
+other = "Obras"
 
 [tags]
 other = "tags"

@@ -1,14 +1,22 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+<h1>
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.main }}
+    {{ if eq .Identifier "works" }}
+      {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
+    {{ end }}
+  {{ end }}
+</h1>
+
+
+
   {{ .Content }}
-  <div class="content-grid">
-    {{/*  {{ range site.RegularPages  }}  */}}
-        {{ range (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages ".Params.draft" "!=" true)) }}
-
-
-            <div>
+   <div class="content-grid">
+    {{ range (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "works")) }}
+{{/*  {{ range (sort .Pages "Date" "desc" (where .Site.Pages ".Params.private" "!=" false))}}  */}}
+            <div class="content-card">
               <a href="{{ .Permalink }}" title="{{ .Title }}">
-                 <h2>{{ .LinkTitle }}</h2>
+                 <h2 class="grid-card-title">{{ .LinkTitle }}</h2>
         {{ if and (isset .Params "image") .Params.image }}
             {{ $image := .Page.Resources.GetMatch .Params.image }}
             {{ with $image }}

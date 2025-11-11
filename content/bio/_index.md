@@ -1,8 +1,7 @@
 +++
 title = 'Bio'
 type = 'bio'
-cv = 'Sebastien-Sanz-de-Santamaria-cv-en.pdf'
-description = 'Professional fueled by a passion for technology and working with cultural initiatives having a positive impact in our society'
+resume = 'Sebastien-Sanz-de-Santamaria-cv-en.pdf'
 +++
 
 ## Services

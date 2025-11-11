@@ -1,5 +1,6 @@
-<a href="{{ .Site.Home.RelPermalink }}" aria-label="Home">
+<a class="title" href="{{ .Site.Home.RelPermalink }}" aria-label="Home">
   <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.description }}</p>
 </a>
 <nav>
   {{ $currentPage := . }}

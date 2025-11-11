@@ -4,8 +4,8 @@ position = 'Web Developer'
 location = 'Mexico City, MEX'
 image = 'tllester-info.png'
 date = 2025-10-01T00:00:00-06:00
-externalurl = 'tllester.info'
-tags = ['product owner','product management','full stack','dev ops']
+externalurl = 'https://tllester.info'
+tags = ['hugo','ci/cd', 'github','cloudflare','migration','wordpress']
 +++
 
 [Todd Lanier Lester](https://tllester.info) is an artist and works on the family farm in Tennessee. Over two decades he launched a series of three rights-focused, participatory works situated between visual media and performance methodology.
