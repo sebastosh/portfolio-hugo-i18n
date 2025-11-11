@@ -5,7 +5,7 @@ location = 'New York City, USA'
 image = "rivet.jpg"
 date = 2020-06-01T00:00:00-06:00
 date-end = 2021-06-01T00:00:00-06:00
-externalurl = 'rivet.es'
+externalurl = 'https://rivet.es'
 tags = ['Product Design','Product Management','Entrepreneurship','Incubator' ]
 +++
 

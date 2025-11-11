@@ -28,13 +28,7 @@
       </div>
 
       <div class="page-meta">
-        {{ if .Params.externalurl }}
-          <h2>🔗 <a href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a></h2>
-        {{ else if .Params.github }}
-          <h2>🔗 <a href="{{ .Params.github }}" target="_blank">{{ .Title }}</a></h2>
-        {{ else }}
-          <h2>{{ .Title }}</h2>
-        {{ end }}
+        <h2>{{ .Title }}</h2>
 
         {{ if .Params.organization }}
         <div>{{ .Params.organization }}</div>
@@ -44,7 +38,7 @@
         <div>{{ .Params.position }}</div>
         {{ end }}
 
-                    {{ if .Date }}
+        {{ if .Date }}
           <div>
             {{ if .Params.location }}
               <em>{{ .Params.location }}</em>
@@ -60,6 +54,14 @@
         {{ end }}
 
         {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+        {{ if .Params.externalurl }}
+          <a href="{{ .Params.externalurl }}" target="_blank">🔗  {{ .Params.externalurl }}</a>
+        {{end}}
+        {{ if .Params.repo }}
+          <a href="{{ .Params.repo }}" target="_blank"> <img class="github-icon" src="/github.svg" alt="GitHub URL Logo">
+ {{ .Params.repo }}</a>
+        {{ end }}
       </div>
     </div>
 

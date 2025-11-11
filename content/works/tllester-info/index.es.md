@@ -5,7 +5,8 @@ location = 'Ciudad de México, México'
 image = 'tllester-info.png'
 date = 2025-10-01T00:00:00-06:00
 externalurl = 'https://tllester.info'
-tags = ['hugo','CI/CD', 'github','cloudflare','migration','wordpress']
+repo = 'https://github.com/sebastosh/tllester-info'
+tags = ['hugo','TinaCMS','ci/cd', 'github','cloudflare','migration','wordpress']
 +++
 
 [Todd Lanier Lester](https://tllester.info) es artista y trabaja en la granja familiar en Tennessee. Durante más de dos décadas, ha desarrollado una serie de tres obras participativas centradas en los derechos, que se sitúan entre los medios visuales y la metodología performativa.
