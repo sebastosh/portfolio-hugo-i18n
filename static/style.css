@@ -46,7 +46,6 @@ h4,
 h5,
 h6 {
     color: var(--txt-color);
-    /* margin: 1.5em 0; */
 }
 
 /* Header */
@@ -62,6 +61,7 @@ header {
 .title h1 {
     margin: 0;
 }
+
 .title p {
     margin: 0;
     font-size: 1.2em;
@@ -126,75 +126,79 @@ main {
 main h1 {
     width: 100%;
     text-align: center;
-padding: 0 0 .5em 0;
+    padding: 0 0 .5em 0;
     margin: 1em 0;
     border-bottom: 1px solid;
 }
 
 .bio {
     margin-top: 1em;
+    width: 100%;
+    margin-top: 1em;
 }
 
-.bio #resume h1 {
-    margin: 0;
+.bio-card {
+    display: flex;
+    gap: 3em;
+    align-items: center;
 
+}
+.bio-summary {
+    text-align:justify;
+    line-height: 1.4;
 }
 
 .button {
-  line-height: 1;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.35em;
-  padding: 0.75em 1.5em;
-  padding-right: 1.25em;
-  color: #fff;
-  border: none !important;
-  font-weight: 700;
-  border-radius: 2em;
-  font-size: 1rem;
-  box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
-  transition: transform 0.3s;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+    padding: 0.75em 1.5em;
+    padding-right: 1.25em;
+    color: #fff;
+    border: none !important;
+    font-weight: 700;
+    border-radius: 2em;
+    font-size: 1rem;
+    box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+    transition: transform 0.3s;
 
-  background: linear-gradient(
-    90deg,
-    rgb(129, 150, 240) 0%,
-    rgb(43, 105, 181) 100%
-  );
+    background: linear-gradient(90deg,
+            rgb(129, 150, 240) 0%,
+            rgb(43, 105, 181) 100%);
 }
 
 .button__icon {
-  width: 1.5em;
-  height: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .button:hover {
-  border-color: #f4f5f2;
+    border-color: #f4f5f2;
 }
 
 .button:active {
-  transform: scale(0.98);
-  box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+    transform: scale(0.98);
+    box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
 }
 
-
-
-
-.bio #resume a {
-    width: max-content;
+.bio ul {
+    margin: 0 !important;
     display: flex;
-    gap: 15px;
-    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.bio ul li {
+    display: block;
     border: 1px solid;
-    padding: 10px 15px;
-
+    padding: 10px;
+    margin: 5px;
 }
 
-.bio img {
-    width: revert;
-    height: revert;
-    border: none !important;
-}
+
 
 main .page {
     width: 100%;
@@ -221,7 +225,7 @@ main img {
 /* Work Grid */
 
 .content-grid {
-display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
