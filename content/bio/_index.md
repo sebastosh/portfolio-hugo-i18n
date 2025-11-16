@@ -2,7 +2,7 @@
 title = 'Bio'
 type = 'bio'
 resume = 'Sebastien-Sanz-de-Santamaria-cv-en.pdf'
-summary = "Product Owner and Software Engineer with 6 years of experience and proficiency in digital products in arts, education, and culture. Expert in all phases of tech-based products,solutioning ideas into achievement. Enjoys translating complexity into actionable requirements. Biggest strengths include product management, full-stack software engineering, UI/UX design, and data analysis. Passionate team member inspired by empathic curiosity, led and contributed to diverse team structures. Holds a Software Engineering Program Certification. Inspired and driven to empower solutions and opportunity through technology."
+summary = "Product Owner and Software Engineer with 6 years of experience and proficiency in digital products in arts, education, and culture. Expert in all phases of tech-based products, solutioning ideas into achievement. Enjoys translating complexity into actionable requirements. Biggest strengths include product management, full-stack software engineering, UI/UX design, and data analysis. Passionate team member inspired by empathic curiosity, led and contributed to diverse team structures. Holds a Software Engineering Program Certification. Inspired and driven to empower solutions and opportunity through technology."
 +++
 
 ## Roles
