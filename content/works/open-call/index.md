@@ -1,10 +1,10 @@
 +++
 title = 'Open Call'
-position = 'Tech Project'
+position = 'Full Stack Web Developer'
 location = 'New York City, USA'
 image = "open-call.jpg"
 date = 2019-04-01T00:00:00-07:00
-github = 'https://github.com/sebastosh/open-call'
+repo = 'https://github.com/sebastosh/open-call'
 tags = ['ReactJS','Rails API','JWT','AWS S3']
 +++
 
@@ -15,25 +15,25 @@ Built at [@flatiron-school](https://github.com/flatiron-school) with [@wrfeng](h
 
 ## Key Technologies, Packages, and Gems
 
-* Front End
+Front End
 
-  * React.js
+- React.js
 
-* Back End
+Back End
 
-  * Rails 5 API
-  * JWT token authentication
-  * BCrypt
-  * Postgres database
-  * fast_jsonapi serializer
-
+- Rails 5 API
+- JWT token authentication
+- BCrypt
+- Postgres database
+- fast_jsonapi serializer
+- AWS S3
 
 ## Core Features
 
-* Unregistered users can view all active open calls on the front page.
-* A call to action directs users to each of their appropriate signup flows. 
-* Artists can upload and add metadata to images of their artwork. They are store in groups called portfolios
-* Organizations can publish a form based open call, including setting a deadline date for the closure of the open call.
-* Artist can apply once to each available open call.
-* Artists submit a selection of pre-uploaded portfolio images.
-* An organization chooses the finalist artist for each of their open calls
+- Unregistered users can view all active open calls on the front page.
+- A call to action directs users to each of their appropriate signup flows.
+- Artists can upload and add metadata to images of their artwork. They are store in groups called portfolios
+- Organizations can publish a form based open call, - cluding setting a deadline date for the closure of the - en call.
+- Artist can apply once to each available open call.
+- Artists submit a selection of pre-uploaded portfolio images.
+- An organization chooses the finalist artist for each of their open calls.

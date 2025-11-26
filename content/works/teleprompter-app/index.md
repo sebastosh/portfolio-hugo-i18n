@@ -1,10 +1,10 @@
 +++
 title = 'Teleprompter App'
-position = 'Tech Project'
+position = 'Full Stack Web Developer'
 location = 'New York City, USA'
 image = 'teleprompter-app.png'
 date = 2019-03-01T00:00:00-07:00
-github = 'https://github.com/sebastosh/teleprompter-app'
+repo = 'https://github.com/sebastosh/teleprompter-app'
 tags = ['JavaScript', 'QuillJS','Rails API']
 +++
 

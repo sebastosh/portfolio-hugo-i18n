@@ -1,6 +1,6 @@
 +++
 title = 'Synth Sessions'
-position = 'Tech Project'
+position = 'Full Stack Web Developer'
 location = 'New York City, USA'
 image = "synth-sessions.png"
 date = 2019-07-01T00:00:00-07:00

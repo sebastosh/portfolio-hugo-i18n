@@ -1,10 +1,35 @@
 +++
 title = 'Teleprompter App'
+position = 'Desarrollador Web Full Stack'
+location = 'New York City, USA'
 image = 'teleprompter-app.png'
 date = 2019-03-01T00:00:00-07:00
+repo = 'https://github.com/sebastosh/teleprompter-app'
 tags = ['JavaScript', 'QuillJS','Rails API']
 +++
 
-Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
+Una interfaz de teleprompter basada en web que permite al orador leer guiones en cámara o ante un público en vivo.
 
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.
+Utilizando Javascript para crear una aplicación interactiva de una sola página mediante la manipulación del DOM, incorporando la biblioteca QuillJS para invocar un editor de texto WYSIWYG con capacidad completa de CRUD. Se utiliza la API de Ruby on Rails como backend para guardar documentos.
+
+Desarrollado en [@flatiron-school](https://github.com/flatiron-school) con [@mmcgovern0](https://github.com/mmcgovern0) y [@jmhill91](https://github.com/jmhill91).
+
+## Tecnologías clave, paquetes y gemas
+
+- Front End
+
+  - Javascript
+  - QuillJS
+  - HTML, CSS
+
+- Back End
+  
+  - Rails 5 API
+  - Postgres database
+
+## Características principales
+
+- El usuario puede acceder y realizar un CRUD completo en todos los scripts de la base de datos.
+- Un usuario puede crear un nuevo script.
+- Cada script se puede editar en un módulo de edición de texto WYSIWYG de QuillJS.
+- Cada script se puede cambiar al modo prompt. El desplazamiento actualmente está configurado a una velocidad fija y se activa presionando la tecla “Retorno” en el teclado de la computadora.

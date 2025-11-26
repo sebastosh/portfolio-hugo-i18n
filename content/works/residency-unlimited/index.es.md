@@ -3,9 +3,10 @@ title = 'Residency Unlimited'
 position = 'Director de operaciones / Cofundador'
 location = 'Nueva York, EE. UU. '
 image = 'residencyunlimited.jpg'
-date-start = 2009-06-01T00:00:00-06:00
+datestart = 2009-06-01T00:00:00-06:00
 date = 2017-12-31T00:00:00-06:00
-tags = ['PHP','Wordpress','CSS','HTML']
+externalurl = 'https://residencyunlimited.org/'
+tags = ['Cofundador','Operaciones','Producción cultural','Administración','Redacción de subvenciones','Contabilidad','Redacción de subvenciones','PHP','WordPress','PHP','CSS','HTML']
 +++
 
 Residency Unlimited (RU) es una organización artística sin fines de lucro que apoya el proceso creativo de artistas y curadores estadounidenses e internacionales en todas las etapas de su carrera a través de residencias únicas y personalizadas y programas públicos durante todo el año.

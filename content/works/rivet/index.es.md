@@ -9,6 +9,12 @@ externalurl = 'https://rivet.es'
 tags = ['Product Design','Product Management','Entrepreneurship','Incubator' ]
 +++
 
-Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
+Rivet es una plataforma de búsqueda unificada diseñada para ayudarte a encontrar y activar oportunidades que impulsen tu práctica creativa.
 
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.
+Rivet fue fundada en 2016 por Katrina Neumann, Sebastien Sanz de Santamaria y Kira Simon-Kennedy, con el apoyo de NEW INC, la incubadora cultural del New Museum, y del Centro de Medios Made in NY del IFP.
+
+Responsabilidades clave:
+
+- Creación de un mercado/panel digital de oportunidades creativas y culturales a nivel mundial.
+- Diseño de producto y creación del MVP.
+- Gestión de producto y colaboración con el equipo de ingeniería en el desarrollo de una aplicación integral en Flask.
