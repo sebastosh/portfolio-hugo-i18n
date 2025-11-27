@@ -67,14 +67,14 @@ header {
     font-size: 1.2em;
 }
 
-nav>* {
+nav > * {
     border: 1px solid var(--a-color);
     margin-left: 0.67em;
     padding: 10px 10px;
     font-size: 20px;
 }
 
-nav>a:hover {
+nav > a:hover {
     border: 1px solid var(--ahover-color);
 }
 
@@ -141,8 +141,9 @@ main h1 {
     align-items: center;
 
 }
+
 .bio-summary {
-    text-align:justify;
+    text-align: justify;
     line-height: 1.4;
 }
 
@@ -317,7 +318,7 @@ footer {
         color: #252525;
     }
 
-    body>* {
+    body > * {
         color: var(--txt-color);
     }
 
@@ -337,4 +338,23 @@ footer {
         border: 1px solid var(--a-color);
     }
 
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        width: 400px;
+        padding: 1em;
+    }
+
+    header {
+        margin: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 1em;
+    }
+
+    header > nav > * {
+        margin: 0;
+    }
 }
