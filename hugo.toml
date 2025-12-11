@@ -45,7 +45,7 @@ disableHugoGeneratorInject = false
 [languages]
   [languages.en]
     languageCode = 'en-US'
-    languageName = 'en 🇺🇸'
+    languageName = 'en us'
     LanguageDirection = 'ltr'
     timeZone = 'America/New_York'
     title = 'Sebastien Sanz de Santamaria'
@@ -58,7 +58,7 @@ disableHugoGeneratorInject = false
         more = 'More'
   [languages.es]
     languageCode = 'es-MX'
-    languageName = 'es 🇲🇽'
+    languageName = 'es mx'
     LanguageDirection = 'ltr'
     timeZone = "America/Mexico_City"
     title = 'Sebastien Sanz de Santamaria'

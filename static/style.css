@@ -312,9 +312,8 @@ footer {
         color-scheme: light;
         --bg-color: #252525;
         --txt-color: #ffffff;
-        --txt-color: #2e5d8f;
-        --a-color: #4789cf;
-        --ahover-color: #4762cf;
+        --a-color: #ffffff;
+        --ahover-color: #ffffff;
         color: #252525;
     }
 
@@ -329,13 +328,17 @@ footer {
 
     a:hover {
         color: var(--ahover-color);
-    }
 
+    }
     .work-tag span {
         margin: 5px;
         padding: 4px;
         color: var(--a-color);
         border: 1px solid var(--a-color);
+    }
+
+    .content a {
+            text-decoration: underline;
     }
 
 }

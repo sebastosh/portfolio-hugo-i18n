@@ -9,5 +9,4 @@ repo = 'https://github.com/sebastosh/no-matter'
 tags = ['react','vite','JSX','HTML','CSS','ci/cd', 'netlify','spa','front-end','pdf']
 +++
 
-Digital take on [https://www.hmirra.net/cathartes19](https://www.hmirra.net/cathartes19) rider v.1.4
-[MATTER RIDER](https://www.hmirra.net/information/pdfs/matter_rider.pdf)
+Una versión digital derivada de la obra [MATTER RIDER](https://www.hmirra.net/information/pdfs/matter_rider.pdf) de la artista conceptual [Helen Mirra](https://www.hmirra.net/biography/)
