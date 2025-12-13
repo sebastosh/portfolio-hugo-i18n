@@ -191,7 +191,7 @@
      font-weight: 700;
      border-radius: 2em;
      font-size: 1rem;
-     box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+     box-shadow: 0 0.7em 1.5em -0.5em hsl(0deg 0% 50%);
      transition: transform 0.3s;
 
      background: linear-gradient(90deg,
