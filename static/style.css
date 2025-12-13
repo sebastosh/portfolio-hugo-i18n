@@ -93,8 +93,8 @@
  }
 
  nav {
-        display: flex;
-        align-items:center;
+     display: flex;
+     align-items: center;
  }
 
  nav > * {
@@ -108,15 +108,14 @@
      border: 1px solid var(--ahover-color);
  }
 
-
  .dropdown {
-    display: inline-block;
-    border: none !important;
+     display: inline-block;
+     border: none !important;
  }
 
-   .lang-icon {
-        fill: #696969;
-     }
+ .icon-fill {
+     fill: #696969;
+ }
 
  .dropdown-content {
      display: none;
@@ -350,8 +349,8 @@
          color: var(--txt-color);
      }
 
-     .lang-icon {
-        fill: white;
+     .icon-fill {
+         fill: white;
      }
 
      a,
