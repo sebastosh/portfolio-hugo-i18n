@@ -4,8 +4,8 @@ latest = 'Ultimas'
 more = 'Mas'
 resume = 'Currículum Vitae'
 
-[bio]
-other = "Biografía"
+[about]
+other = "Acerca de"
 
 [works]
 other = "Obras"
@@ -14,4 +14,4 @@ other = "Obras"
 other = "tags"
 
 [language]
-other = "es mx"
+other = "es 🇲🇽"

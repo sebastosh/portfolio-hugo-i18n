@@ -92,6 +92,11 @@
      font-size: 1.2em;
  }
 
+ nav {
+        display: flex;
+        align-items:center;
+ }
+
  nav > * {
      border: 1px solid var(--a-color);
      margin-left: 0.67em;
@@ -105,11 +110,13 @@
 
 
  .dropdown {
-     position: relative;
-     display: inline-block;
-     border: none !important;
-
+    display: inline-block;
+    border: none !important;
  }
+
+   .lang-icon {
+        fill: #696969;
+     }
 
  .dropdown-content {
      display: none;
@@ -341,6 +348,10 @@
 
      body > * {
          color: var(--txt-color);
+     }
+
+     .lang-icon {
+        fill: white;
      }
 
      a,

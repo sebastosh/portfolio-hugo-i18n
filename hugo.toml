@@ -19,9 +19,9 @@ disableHugoGeneratorInject = false
     url = 'works/'
     weight = 10
   [[menus.main]]
-    identifier = 'bio'
-    name = 'Bio'
-    url = 'bio/'
+    identifier = 'about'
+    name = 'About'
+    url = 'about/'
     weight = 20
   # [[menus.main]]
   #   identifier = 'tags'
@@ -45,7 +45,7 @@ disableHugoGeneratorInject = false
 [languages]
   [languages.en]
     languageCode = 'en-US'
-    languageName = 'en us'
+    languageName = 'en 🇺🇸'
     LanguageDirection = 'ltr'
     timeZone = 'America/New_York'
     title = 'Sebastien Sanz de Santamaria'
@@ -58,7 +58,7 @@ disableHugoGeneratorInject = false
         more = 'More'
   [languages.es]
     languageCode = 'es-MX'
-    languageName = 'es mx'
+    languageName = 'es 🇲🇽'
     LanguageDirection = 'ltr'
     timeZone = "America/Mexico_City"
     title = 'Sebastien Sanz de Santamaria'
