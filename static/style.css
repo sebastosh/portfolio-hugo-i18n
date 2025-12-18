@@ -24,20 +24,33 @@
 
 
 
+ [data-theme="light"] {
+   --color-bg: #fafafa;
+   --color-fg: #1a1a1a;
+}
+
+[data-theme="dark"] {
+   --color-bg: #1a1a1a;
+   --color-fg: #fafafa;
+}
+
+
+
+
  :root {
-     color-scheme: light dark;
-     --bg-color: #ffffff;
-     --txt-color: #252525;
-     --a-color: #696969;
+     background-color: var(--color-bg);
+     color: var(--color-fg);
+     --a-color: var(--color-fg);
      --ahover-color: #5a5a5a;
-     color: #252525;
+     
  }
 
  html {
      font-family: "Atkinson Hyperlegible", sans-serif;
-     background-color: var(--bg-color);
-     color: var(--txt-color);
+     
+
  }
+
 
  body {
      height: 95vh;
@@ -46,9 +59,19 @@
      flex-direction: column;
      align-items: center;
      margin: 2% auto;
-     background-color: var(--bg-color);
      justify-content: space-between;
  }
+
+ .theme-toggle {
+  font-size: 2rem;
+  transition: all var(--global-transition-time) ease-in-out;
+  cursor: pointer;
+  background-color: var(--color-bg);
+  border: none;
+
+
+
+}
 
  a,
  a:visited {
@@ -64,14 +87,7 @@
      color: var(--ahover-color);
  }
 
- h1,
- h2,
- h3,
- h4,
- h5,
- h6 {
-     color: var(--txt-color);
- }
+
 
  /* Header */
 
@@ -80,7 +96,7 @@
      justify-content: space-between;
      width: 100%;
      align-items: center;
-     margin: 1em 0 0;
+     margin: 0 0 1em 0;
  }
 
  .title h1 {
@@ -99,7 +115,7 @@
 
  nav > * {
      border: 1px solid var(--a-color);
-     margin-left: 0.67em;
+     margin: 0 0 0 0.35em;
      padding: 10px 10px;
      font-size: 20px;
  }
@@ -120,22 +136,22 @@
  .dropdown-content {
      display: none;
      position: absolute;
-     background-color: var(--bg-color);
-     border: 1px solid var(--ahover-color);
+     background-color: var(--color-bg);
+     border: 1px solid;
      z-index: 1;
      width: 72px;
  }
 
  .dropdown-content a {
      padding: 10px 12px;
-     color: var(--ahover-color);
+     /* color: var(--ahover-color); */
      text-decoration: none;
      display: block;
      font-size: 18px;
  }
 
  .dropdown-content a:hover {
-     background-color: var(--bg-color);
+     /* background-color: var(--bg-color); */
      color: var(--ahover-color);
 
  }
@@ -258,7 +274,6 @@
  /* Work Grid */
 
  .content-grid {
-     border-top: 1px solid;
      padding: 1.5em 0;
      display: flex;
      flex-direction: row;
@@ -306,8 +321,7 @@
  .work-tag span {
      margin: 5px;
      padding: 4px;
-     color: var(--txt-color);
-     border: 1px solid var(--txt-color);
+     border: 1px solid;
  }
 
  .github-icon {
@@ -323,7 +337,7 @@
  .more {
      margin: 1.3em 0 1em 0;
      padding: .7em;
-     border: 1px solid var(--txt-color);
+     border: 1px solid;
      font-size: 1.5em;
      font-weight: bold;
  }
@@ -332,48 +346,6 @@
 
  footer {
      text-align: center;
- }
-
- /* Dark Mode */
-
- @media (prefers-color-scheme: dark) {
-     :root {
-         color-scheme: light;
-         --bg-color: #252525;
-         --txt-color: #ffffff;
-         --a-color: #ffffff;
-         --ahover-color: #ffffff;
-     }
-
-     body > * {
-         color: var(--txt-color);
-     }
-
-     .icon-fill {
-         fill: white;
-     }
-
-     a,
-     a:visited {
-         color: var(--a-color);
-     }
-
-     a:hover {
-         color: var(--ahover-color);
-
-     }
-
-     .work-tag span {
-         margin: 5px;
-         padding: 4px;
-         color: var(--a-color);
-         border: 1px solid var(--a-color);
-     }
-
-     .content a {
-         text-decoration: underline;
-     }
-
  }
 
  @media only screen and (max-width: 400px) {

@@ -2,7 +2,7 @@
 <h1>
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
-    {{ if eq .Identifier "works" }}
+    {{ if eq .Identifier "work" }}
       {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
     {{ end }}
   {{ end }}
@@ -21,7 +21,7 @@
             {{ $image := .Page.Resources.GetMatch .Params.image }}
             {{ with $image }}
                 {{ $thumb := .Resize "400x" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}">
             {{end}}
                     {{ end }}
             </a>
