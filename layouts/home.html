@@ -18,7 +18,7 @@
 
 
   <div class="content-grid">
-    {{ range first 4 (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "works")) }}
+    {{ range first 6 (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "works")) }}
 {{/*  {{ range (sort .Pages "Date" "desc" (where .Site.Pages ".Params.private" "!=" false))}}  */}}
             <div class="content-card">
               <a href="{{ .Permalink }}" title="{{ .Title }}">
@@ -26,8 +26,8 @@
         {{ if and (isset .Params "image") .Params.image }}
             {{ $image := .Page.Resources.GetMatch .Params.image }}
             {{ with $image }}
-                {{ $thumb := .Resize "400x" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+                {{ $thumb := .Resize "300x" }}
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" >
             {{end}}
                     {{ end }}
             </a>

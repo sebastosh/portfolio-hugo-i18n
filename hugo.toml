@@ -14,9 +14,9 @@ disableHugoGeneratorInject = false
 
 [menus]
   [[menus.main]]
-    identifier = 'works'
-    name = 'Works'
-    url = 'works/'
+    identifier = 'work'
+    name = 'Work'
+    url = 'work/'
     weight = 10
   [[menus.main]]
     identifier = 'about'

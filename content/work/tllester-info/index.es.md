@@ -6,7 +6,7 @@ image = 'tllester-info.png'
 date = 2025-10-01T00:00:00-06:00
 externalurl = 'https://tllester.info'
 repo = 'https://github.com/sebastosh/tllester-info'
-tags = ['hugo','TinaCMS','HTML','JS','CSS','ci/cd', 'github','cloudflare','migration','wordpress']
+tags = ['hugo','TinaCMS','HTML','JS','CSS','CI/CD', 'github','cloudflare','migration','wordpress']
 +++
 
 [Todd Lanier Lester](https://tllester.info) es un artista que, durante más de dos décadas, ha lanzado una serie de tres obras participativas centradas en los derechos humanos, situadas entre el medio visual y la metodología escénica.
