@@ -7,10 +7,12 @@
 
         {{ if .NextInSection }}
 
-            <a class="previous" href="{{ .NextInSection.Permalink }}">
-                <span class="button__icon">←</span>
-                <span class="button__text">{{ .NextInSection.Title }}</span>
+            <a href="{{ .NextInSection.Permalink }}">
+                <span>← {{ .NextInSection.Title }}</span>
             </a>
+
+            {{ else}}
+            <span> </span>
 
        
         {{ end }}
@@ -18,9 +20,8 @@
 
         {{ if .PrevInSection }}
  
-            <a class="next" href="{{ .PrevInSection.Permalink }}">
-                <span class="button__text">{{ .PrevInSection.Title }}</span>
-                <span class="button__icon">→</span>
+            <a href="{{ .PrevInSection.Permalink }}">
+                <span>{{ .PrevInSection.Title }} →</span>
             </a>
 
         {{ end }}

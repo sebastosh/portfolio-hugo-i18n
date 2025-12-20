@@ -1,12 +1,13 @@
 {{ define "main" }}
-<h1>
+<div class="work-header">
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
     {{ if eq .Identifier "work" }}
-      {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
+    <h1>      {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}s
+</h1>
     {{ end }}
   {{ end }}
-</h1>
+</div>
 
 
 
@@ -20,7 +21,7 @@
         {{ if and (isset .Params "image") .Params.image }}
             {{ $image := .Page.Resources.GetMatch .Params.image }}
             {{ with $image }}
-                {{ $thumb := .Resize "400x" }}
+                {{ $thumb := .Resize "300x" }}
             <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}">
             {{end}}
                     {{ end }}

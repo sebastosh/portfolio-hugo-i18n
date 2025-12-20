@@ -25,14 +25,14 @@
 
 
  [data-theme="light"] {
-   --color-bg: #fafafa;
-   --color-fg: #1a1a1a;
-}
+     --color-bg: #fafafa;
+     --color-fg: #1a1a1a;
+ }
 
-[data-theme="dark"] {
-   --color-bg: #1a1a1a;
-   --color-fg: #fafafa;
-}
+ [data-theme="dark"] {
+     --color-bg: #1a1a1a;
+     --color-fg: #fafafa;
+ }
 
 
 
@@ -42,12 +42,12 @@
      color: var(--color-fg);
      --a-color: var(--color-fg);
      --ahover-color: #5a5a5a;
-     
+
  }
 
  html {
      font-family: "Atkinson Hyperlegible", sans-serif;
-     
+
 
  }
 
@@ -63,15 +63,15 @@
  }
 
  .theme-toggle {
-  font-size: 2rem;
-  transition: all var(--global-transition-time) ease-in-out;
-  cursor: pointer;
-  background-color: var(--color-bg);
-  border: none;
+     font-size: 2rem;
+     transition: all var(--global-transition-time) ease-in-out;
+     cursor: pointer;
+     background-color: var(--color-bg);
+     border: none;
 
 
 
-}
+ }
 
  a,
  a:visited {
@@ -170,12 +170,6 @@
      align-items: center;
  }
 
- main h1 {
-     width: 100%;
-     text-align: center;
-     margin-top: 1em;
- }
-
  .bio {
      margin-top: 1em;
      width: 100%;
@@ -257,11 +251,21 @@
      border: 1px solid;
  }
 
+ .work-header {
+     width: 100%;
+     margin: 2em 0 .5em 0;
+     border-bottom: 1px solid;
+ }
+
+ .work-header h1 {
+     margin: 0;
+ }
+
+
  /* Work pagination */
 
  .pagination {
-     border-top: 1px solid;
-     padding-top: .5em;
+
      width: 100%;
      display: flex;
      justify-content: space-between;
