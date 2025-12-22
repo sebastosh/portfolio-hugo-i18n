@@ -27,7 +27,7 @@
           {{ $image := .Page.Resources.GetMatch .Params.image }}
           {{ with $image }}
           {{ $thumb := .Resize "400x" }}
-          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="work-image">
+          <img src="{{ $thumb.RelPermalink }}" alt="" class="work-image">
           {{end}}
         {{ end }}
       </div>

@@ -16,7 +16,7 @@
     {{ range (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "work")) }}
 {{/*  {{ range (sort .Pages "Date" "desc" (where .Site.Pages ".Params.private" "!=" false))}}  */}}
             <div class="content-card">
-              <a href="{{ .Permalink }}" title="{{ .Title }}">
+              <a href="{{ .Permalink }}">
                  <h2 class="grid-card-title">{{ .LinkTitle }}</h2>
         {{ if and (isset .Params "image") .Params.image }}
             {{ $image := .Page.Resources.GetMatch .Params.image }}

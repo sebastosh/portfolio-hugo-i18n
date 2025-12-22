@@ -3,31 +3,17 @@
   {{ .Content }}
 
 
-      {{/*  {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-      {{ if eq .Weight 10 }}
-        <h1>
-          {{ .Pre | markdownify }}{{ T "latest" | default "Latest" }} 
-          {{ i18n .Identifier | default .Name }}
-        </h1>
-
-    
-
-      {{ end }}
-    {{ end }}  */}}
-
 
   <div class="content-grid">
     {{ range first 6 (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "work")) }}
-{{/*  {{ range (sort .Pages "Date" "desc" (where .Site.Pages ".Params.private" "!=" false))}}  */}}
             <div class="content-card">
-              <a href="{{ .Permalink }}" title="{{ .Title }}">
+              <a href="{{ .Permalink }}">
                  <h2 class="grid-card-title">{{ .LinkTitle }}</h2>
         {{ if and (isset .Params "image") .Params.image }}
             {{ $image := .Page.Resources.GetMatch .Params.image }}
             {{ with $image }}
                 {{ $thumb := .Resize "300x" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" >
+            <img src="{{ $thumb.RelPermalink }}" alt="" >
             {{end}}
                     {{ end }}
             </a>
