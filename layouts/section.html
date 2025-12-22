@@ -13,7 +13,7 @@
 
   {{ .Content }}
    <div class="content-grid">
-    {{ range (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "works")) }}
+    {{ range (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "work")) }}
 {{/*  {{ range (sort .Pages "Date" "desc" (where .Site.Pages ".Params.private" "!=" false))}}  */}}
             <div class="content-card">
               <a href="{{ .Permalink }}" title="{{ .Title }}">

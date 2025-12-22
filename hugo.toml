@@ -70,8 +70,8 @@ disableHugoGeneratorInject = false
         latest = 'Utimas'
         more = 'Mas'
     [languages.es.permalinks]
-        _works = "/obras/"
-        works = "/obras/:slug"
+        _work = "/obra/"
+        work = "/obra/:slug"
 
 [sitemap]
   changefreq = "weekly"

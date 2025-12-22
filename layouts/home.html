@@ -18,7 +18,7 @@
 
 
   <div class="content-grid">
-    {{ range first 6 (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "works")) }}
+    {{ range first 6 (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "work")) }}
 {{/*  {{ range (sort .Pages "Date" "desc" (where .Site.Pages ".Params.private" "!=" false))}}  */}}
             <div class="content-card">
               <a href="{{ .Permalink }}" title="{{ .Title }}">
