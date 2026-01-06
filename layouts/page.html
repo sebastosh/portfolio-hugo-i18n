@@ -1,21 +1,5 @@
 {{ define "main" }}
 
-<div class="work-header">
-  <h1>
-  {{ $currentPage := . }}
-  {{ range .Site.Menus.main }}
-    {{ if eq .Identifier "work" }}
-    {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}:
-
-    {{ end }}
-  {{ end }}
-   {{ .Title }}
-  </h1>
-</div>
-
-
-
-  
 {{ partial "work-pagination.html" . }}
   <div class="page">
     
