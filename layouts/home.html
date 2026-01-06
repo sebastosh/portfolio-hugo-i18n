@@ -28,7 +28,7 @@
       {{ if eq .Weight 10 }}
 
       <a href="{{ .URL | relLangURL }}" aria-current="page" aria-label="{{ i18n .Identifier | default .Name }}">
-        {{ .Pre | markdownify }}{{ T "more" | default "more" }} {{ i18n .Identifier | default .Name }}
+        {{ .Pre | markdownify }}{{ T "more" | default "more" }}
       </a>
 
       {{ end }}
