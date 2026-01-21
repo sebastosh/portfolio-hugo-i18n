@@ -1,11 +1,17 @@
 {{ define "main" }}
 
+<div class="work-header">
+  <h1>
+    Latest
+  </h1>
+</div>
+
   {{ .Content }}
 
 
 
   <div class="content-grid">
-    {{ range first 6 (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "work")) }}
+    {{ range first 3 (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "work")) }}
             <div class="content-card">
               <a href="{{ .Permalink }}">
                  <h2 class="grid-card-title">{{ .LinkTitle }}</h2>
