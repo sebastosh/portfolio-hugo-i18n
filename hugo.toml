@@ -1,7 +1,7 @@
 baseURL = 'https://sebastiensanzdesantamaria.net'
 languageCode = 'en-US'
 title = 'Sebastien Sanz de Santamaria'
-description = 'Product Manager / Owner, Web Developer, Cultural Producer'
+description = 'Product Manager / Owner / UX Designer, Web Developer, Cultural Producer'
 
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
@@ -53,7 +53,7 @@ disableHugoGeneratorInject = false
     [languages.en.pagination]
         path = 'page'
     [languages.en.params]
-        description = 'Product Manager / Owner, Web Developer, Cultural Producer'
+        description = 'Product Manager / Owner / UX Designer, Web Developer, Cultural Producer'
         latest = 'Latest'
         more = 'More'
   [languages.es]
@@ -66,7 +66,7 @@ disableHugoGeneratorInject = false
     [languages.es.pagination]
         path = 'página'
     [languages.es.params]
-        description = 'Gerente / Dueño de Producto, Desarrollador Web, Productor Cultural'
+        description = 'Gerente / Dueño / Diseño de Producto, Desarrollador Web, Productor Cultural'
         latest = 'Utimas'
         more = 'Mas'
     [languages.es.permalinks]
