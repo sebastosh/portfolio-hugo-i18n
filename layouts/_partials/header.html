@@ -21,8 +21,8 @@
       {{ with $.Page.Translations }}
       {{ range . }}
 
-      <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}">
-        {{ .Language.LanguageName }}
+      <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Name }}">
+        {{ .Language.Label }}
       </a>
 
       {{ end }}
