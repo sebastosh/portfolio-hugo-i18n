@@ -4,10 +4,13 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 
 {{- with .Params.image }}
-{{ $image := $.Resources.GetMatch . }}
-{{ with $image }}
+{{ with $.Resources.GetMatch . }}
+  {{/* Social platforms do not render SVG cards, and Resize only accepts raster
+       images, so an SVG placeholder simply yields no og:image. */}}
+  {{ if ne .MediaType.SubType "svg" }}
   {{ $thumb := .Resize "400x" }}
 <meta property="og:image" content="{{ $thumb.Permalink }}">
+  {{ end }}
 {{ end }}
 {{ end }}
 

@@ -1,0 +1,23 @@
+{{- /*
+Renders the practice filter as a row of links. No JavaScript: each chip is a
+link to the matching taxonomy term page, and the current one is marked with
+aria-current.
+
+@context {page} . The current page (the work section, or a practices term).
+
+@example: {{ partial "practice-filter.html" . }}
+*/}}
+
+{{- $page := . }}
+{{- $currentURL := $page.RelPermalink }}
+
+<nav class="practice-filter" aria-label="{{ T "practices" | default "Practice" }}">
+  {{- with $page.Site.GetPage "/work" }}
+  <a href="{{ .RelPermalink }}" class="practice-chip"{{ if eq $currentURL .RelPermalink }} aria-current="page"{{ end }}>{{ T "practice-all" | default "All" }}</a>
+  {{- end }}
+  {{- range $slug := slice "professional" "collaboration" "project" }}
+    {{- with $page.Site.GetPage (printf "/practices/%s" $slug) }}
+  <a href="{{ .RelPermalink }}" class="practice-chip"{{ if eq $currentURL .RelPermalink }} aria-current="page"{{ end }}>{{ T (printf "practice-%s" $slug) | default $slug }}</a>
+    {{- end }}
+  {{- end }}
+</nav>

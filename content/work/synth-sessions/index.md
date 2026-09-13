@@ -6,6 +6,7 @@ image = "synth-sessions.png"
 date = 2019-07-01T00:00:00-07:00
 repo = 'https://github.com/sebastosh/synth-session'
 tags = ['ReactJS','ToneJS','NexusUI','Rails API','JWTAuth']
+practices = ['professional']
 +++
 
 ## Multi-synthesizer jamming sessions app

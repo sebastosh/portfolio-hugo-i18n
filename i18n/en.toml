@@ -1,5 +1,53 @@
-copyright = 'Copyright'
+copyright = '©'
 more = 'View All Work'
+latest = 'Latest'
+home = 'Home'
+visit = 'Visit'
+repo = 'Repo'
+
+contact = 'Contact'
+form-name = 'Name'
+form-email = 'Email'
+form-email-hint = 'Only used to reply to you.'
+form-subject = 'Subject'
+form-message = 'Message'
+form-send = 'Send message'
+form-required = 'required'
+form-optional = 'optional'
+form-honeypot = "Don't fill this out:"
 
 [language]
 other = "en 🇺🇸"
+
+[work]
+other = "Work"
+
+[about]
+other = "About"
+
+[tags]
+other = "Tags"
+
+[main-nav]
+other = "Main navigation"
+
+[language-switcher]
+other = "Language"
+
+[practices]
+other = "Practice"
+
+[practice-all]
+other = "All"
+
+[practice-professional]
+other = "Professional"
+
+[practice-collaboration]
+other = "Collaboration"
+
+[practice-project]
+other = "Project"
+
+[source]
+other = "Source"

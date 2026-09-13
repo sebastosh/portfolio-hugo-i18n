@@ -1,1 +1,2 @@
-<p>{{ T "copyright" | default "Copyright" }} © {{ now.Year }} {{ .Site.Title }}.</p>
+<p>{{ T "copyright" | default "©" }} {{ now.Year }} {{ .Site.Title }}</p>
+<p><a href="{{ (site.GetPage "/contact").RelPermalink }}">{{ T "contact" | default "Contact" }}</a></p>

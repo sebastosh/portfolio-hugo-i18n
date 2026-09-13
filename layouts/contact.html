@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+<h1 class="page-title">{{ .Title }}</h1>
+
+<div class="content">
+  {{ .Content }}
+</div>
+
+{{/* Resolve the thank-you page for this language so Spanish submitters land on
+     /es/gracias/ instead of Netlify's own generic success screen. */}}
+{{ $action := "/" }}
+{{ with site.GetPage "/thanks" }}{{ $action = .RelPermalink }}{{ end }}
+
+<form
+  name="contact"
+  method="POST"
+  action="{{ $action }}"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  class="contact-form">
+
+  {{/* Netlify pairs the form by matching this hidden value to the name attribute above. */}}
+  <input type="hidden" name="form-name" value="contact">
+  <input type="hidden" name="lang" value="{{ site.Language.Lang }}">
+
+  {{/* Honeypot: hidden from people, irresistible to bots. */}}
+  <p class="hp-field" aria-hidden="true">
+    <label>{{ T "form-honeypot" }} <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+  </p>
+
+  <div class="form-field">
+    <label for="contact-name">
+      {{ T "form-name" }} <span class="form-note">{{ T "form-required" }}</span>
+    </label>
+    <input type="text" id="contact-name" name="name" autocomplete="name" required>
+  </div>
+
+  <div class="form-field">
+    <label for="contact-email">
+      {{ T "form-email" }} <span class="form-note">{{ T "form-required" }}</span>
+    </label>
+    <input type="email" id="contact-email" name="email" autocomplete="email" required
+           aria-describedby="contact-email-hint">
+    <p id="contact-email-hint" class="form-hint">{{ T "form-email-hint" }}</p>
+  </div>
+
+  <div class="form-field">
+    <label for="contact-subject">
+      {{ T "form-subject" }} <span class="form-note">{{ T "form-optional" }}</span>
+    </label>
+    <input type="text" id="contact-subject" name="subject">
+  </div>
+
+  <div class="form-field">
+    <label for="contact-message">
+      {{ T "form-message" }} <span class="form-note">{{ T "form-required" }}</span>
+    </label>
+    <textarea id="contact-message" name="message" rows="7" required></textarea>
+  </div>
+
+  <div class="form-actions">
+    <button type="submit" class="button">{{ T "form-send" }}</button>
+  </div>
+
+</form>
+
+{{ end }}

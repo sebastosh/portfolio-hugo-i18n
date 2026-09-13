@@ -1,0 +1,17 @@
+{{- /*
+Renders the caption and source credit for a page image.
+
+@context {page} . The page whose imagecaption / imagecredit / imagecrediturl to render.
+
+@example: {{ partial "image-credit.html" . }}
+*/}}
+
+{{- if or .Params.imagecaption .Params.imagecredit }}
+<p class="image-credit">
+  {{- with .Params.imagecaption }}{{ . }}{{ end }}
+  {{- with .Params.imagecredit }}
+    {{- if $.Params.imagecaption }} · {{ end }}{{ T "source" | default "Source" }}:
+    {{ with $.Params.imagecrediturl }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $.Params.imagecredit }}</a>{{ else }}{{ $.Params.imagecredit }}{{ end }}
+  {{- end }}
+</p>
+{{- end }}

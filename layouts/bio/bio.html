@@ -3,8 +3,17 @@
   <h1>{{ .Title }}</h1>
 </div>
 <div class="bio">
+  {{ if and (isset .Params "image") .Params.image }}
+  <div class="bio-portrait">
+    {{ with .Page.Resources.GetMatch .Params.image }}
+      {{ $img := .Resize "480x webp" }}
+      <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}" width="{{ $img.Width }}" height="{{ $img.Height }}">
+    {{ end }}
+    {{ partial "image-credit.html" . }}
+  </div>
+  {{ end }}
   <div class="bio-card">
-    <div class="bio-summary">{{ .Params.summary}}</div>
+    <div class="bio-summary">{{ .Params.summary }}</div>
     <a href="{{ .Params.resume }}" target="_blank">
       <button class="button">
         <span class="button__text">{{ T "resume" | default "Resume" }}</span>
