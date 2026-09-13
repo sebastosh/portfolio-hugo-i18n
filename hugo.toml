@@ -1,5 +1,5 @@
 baseURL = 'https://sebastiensanzdesantamaria.net'
-languageCode = 'en-US'
+locale = 'en-US'
 title = 'Sebastien Sanz de Santamaria'
 description = 'Product Manager / Owner / UX Designer, Web Developer, Cultural Producer'
 
@@ -48,9 +48,9 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    languageCode = 'en-US'
-    languageName = 'en 🇺🇸'
-    LanguageDirection = 'ltr'
+    locale = 'en-US'
+    label = 'en 🇺🇸'
+    direction = 'ltr'
     timeZone = 'America/New_York'
     title = 'Sebastien Sanz de Santamaria'
     weight = 1
@@ -61,9 +61,9 @@ disableHugoGeneratorInject = false
         latest = 'Latest'
         more = 'More'
   [languages.es]
-    languageCode = 'es-MX'
-    languageName = 'es 🇲🇽'
-    LanguageDirection = 'ltr'
+    locale = 'es-MX'
+    label = 'es 🇲🇽'
+    direction = 'ltr'
     timeZone = "America/Mexico_City"
     title = 'Sebastien Sanz de Santamaria'
     weight = 2
