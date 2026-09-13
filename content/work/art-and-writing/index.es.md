@@ -8,6 +8,7 @@ datestart = 2020-07-01T00:00:00-07:00
 date = 2025-05-01T00:00:00-06:00
 externalurl = 'artandwriting.org'
 tags = ['product owner','product management','full stack','dev ops']
+practices = ['professional']
 +++
 Responsable técnico de los productos digitales del Scholastic Art and Writing Awards, un premio nacional (EEUU) para jóvenes, con 25 categorías de arte visual y literatura. Las aplicaciones a la convocatoria alcanzan las  300 mil solicitudes; 80 mil premiaciones regionales; 3 mil premios a nivel nacional.
 

@@ -6,6 +6,7 @@ image = "rivet.jpg"
 date = 2020-06-01T00:00:00-06:00
 externalurl = 'https://rivet.es'
 tags = ['Product Design','Product Management','Entrepreneurship','Incubator' ]
+practices = ['collaboration']
 +++
 
 Rivet is a unified search platform designed to help you find and activate opportunities to advance your creative practice.

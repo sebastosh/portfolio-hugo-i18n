@@ -6,6 +6,7 @@ image = 'teleprompter-app.png'
 date = 2019-03-01T00:00:00-07:00
 repo = 'https://github.com/sebastosh/teleprompter-app'
 tags = ['JavaScript', 'QuillJS','Rails API']
+practices = ['professional']
 +++
 
 

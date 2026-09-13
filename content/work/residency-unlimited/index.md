@@ -7,6 +7,7 @@ datestart = 2009-06-01T00:00:00-06:00
 date = 2017-12-31T00:00:00-06:00
 externalurl = 'https://residencyunlimited.org/'
 tags = ['Co-founder','Operations','Cultural Production','Administration','Grant Writing', 'Bookkeeping','Grant-Writing','PHP','Wordpress','PHP','CSS','HTML']
+practices = ['professional']
 +++
 
 Residency Unlimited (RU) is a non-profit arts organization that supports the creative process of US based and international artists and curators at all stages of their career through its unique, customized residencies and year-round public programs.

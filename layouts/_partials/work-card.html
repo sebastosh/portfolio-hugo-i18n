@@ -1,0 +1,27 @@
+{{- /*
+Renders one work item as a grid card.
+
+@context {page} . The work page to render.
+
+@example: {{ partial "work-card.html" . }}
+*/}}
+
+<div class="content-card">
+  <a href="{{ .RelPermalink }}">
+    <h2 class="grid-card-title">{{ .LinkTitle }}</h2>
+    {{ with .Params.position }}
+    <p class="grid-card-meta">{{ . }}</p>
+    {{ end }}
+    {{ if and (isset .Params "image") .Params.image }}
+      {{ with .Resources.GetMatch .Params.image }}
+        {{ if eq .MediaType.SubType "svg" }}
+          {{/* SVG is not a processable image resource: serve it as-is. */}}
+          <img src="{{ .RelPermalink }}" alt="" loading="lazy" width="960" height="600">
+        {{ else }}
+          {{ $thumb := .Resize "600x webp" }}
+          <img src="{{ $thumb.RelPermalink }}" alt="" loading="lazy" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </a>
+</div>

@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hugo-portfolio",
+      "runtimeExecutable": "hugo",
+      "runtimeArgs": [
+        "server",
+        "--disableFastRender"
+      ],
+      "port": 1313,
+      "autoPort": true
+    }
+  ]
+}

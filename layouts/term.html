@@ -1,7 +1,25 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+
+<div class="work-header">
+  <h1>
+    {{- if eq .Data.Plural "practices" -}}
+      {{ T (printf "practice-%s" .Data.Term) | default .Title }}
+    {{- else -}}
+      {{ .Title }}
+    {{- end -}}
+  </h1>
+</div>
+
+{{ if eq .Data.Plural "practices" }}
+  {{ partial "practice-filter.html" . }}
+{{ end }}
+
+{{ .Content }}
+
+<div class="content-grid">
+  {{ range .Pages.ByDate.Reverse }}
+    {{ partial "work-card.html" . }}
   {{ end }}
+</div>
+
 {{ end }}

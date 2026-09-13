@@ -6,6 +6,7 @@ image = "open-call.jpg"
 date = 2019-04-01T00:00:00-07:00
 repo = 'https://github.com/sebastosh/open-call'
 tags = ['ReactJS','Rails API','JWT','AWS S3']
+practices = ['professional']
 +++
 
 A marketplace web app allowing artists to submit works for review and selection by institutions. There are two types of users, artists and organizations. Artists can signup and upload their artworks into portfolios. Organizations can signup and post open calls for artwork submissions. Artists can submit selected portfolio images to an open call for review by the organization. An organization can select a finalist artist for each of their respective open calls.

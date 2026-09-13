@@ -6,6 +6,7 @@ image = "open-call.jpg"
 date = 2019-04-01T00:00:00-07:00
 repo = 'https://github.com/sebastosh/open-call'
 tags = ['ReactJS','Rails API','JWT','AWS S3']
+practices = ['professional']
 +++
 
 Una aplicación web de mercado que permite a los artistas enviar obras para su revisión y selección por parte de instituciones. Hay dos tipos de usuarios: artistas y organizaciones. Los artistas pueden registrarse y subir sus obras a portafolios. Las organizaciones pueden registrarse y publicar convocatorias abiertas para la presentación de obras. Los artistas pueden enviar imágenes seleccionadas de su portafolio a una convocatoria abierta para su revisión por parte de la organización. Una organización puede seleccionar un artista finalista para cada una de sus respectivas convocatorias abiertas.

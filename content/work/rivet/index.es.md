@@ -6,6 +6,7 @@ image = "rivet.jpg"
 date = 2020-06-01T00:00:00-06:00
 externalurl = 'https://rivet.es'
 tags = ['Product Design','Product Management','Entrepreneurship','Incubator' ]
+practices = ['collaboration']
 +++
 
 Rivet es una plataforma de búsqueda unificada diseñada para ayudarte a encontrar y activar oportunidades que impulsen tu práctica creativa.

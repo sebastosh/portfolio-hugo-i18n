@@ -1,17 +1,55 @@
-copyright = 'Derechos de autor'
-allrightsreserved = 'Reservados todos los derechos'
-latest = 'Ultimas'
+copyright = '©'
 more = 'Ver Todas las Obras'
-resume = 'Currículum Vitae'
+home = 'Inicio'
+visit = 'Visitar'
+repo = 'Repositorio'
+allrightsreserved = 'Reservados todos los derechos'
+latest = 'Últimas'
+resume = 'Currículum Vitae'
+
+contact = 'Contacto'
+form-name = 'Nombre'
+form-email = 'Correo electrónico'
+form-email-hint = 'Solo se usa para responderte.'
+form-subject = 'Asunto'
+form-message = 'Mensaje'
+form-send = 'Enviar mensaje'
+form-required = 'obligatorio'
+form-optional = 'opcional'
+form-honeypot = 'No llenes este campo:'
+
+[language]
+other = "es 🇲🇽"
 
 [about]
 other = "Acerca de"
 
 [work]
-other = "Obra"
+other = "Obras"
 
 [tags]
-other = "tags"
+other = "Tags"
 
-[language]
-other = "es 🇲🇽"
+[main-nav]
+other = "Navegación principal"
+
+[language-switcher]
+other = "Idioma"
+
+[practices]
+other = "Práctica"
+
+[practice-all]
+other = "Todas"
+
+[practice-professional]
+other = "Profesional"
+
+[practice-collaboration]
+other = "Colaboración"
+
+[practice-project]
+other = "Proyecto"
+
+[source]
+other = "Fuente"

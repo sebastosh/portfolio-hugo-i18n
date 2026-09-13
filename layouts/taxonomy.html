@@ -1,7 +1,21 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+
+<div class="work-header">
+  <h1>
+    {{- if eq .Data.Plural "practices" -}}
+      {{ T "practices" | default .Title }}
+    {{- else -}}
+      {{ .Title }}
+    {{- end -}}
+  </h1>
+</div>
+
+{{ .Content }}
+
+<div class="work-tag">
   {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <span><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> ({{ len .Pages }})</span>
   {{ end }}
+</div>
+
 {{ end }}

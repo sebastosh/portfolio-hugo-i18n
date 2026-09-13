@@ -1,48 +1,21 @@
 {{ define "main" }}
 
-<div class="work-header">
-  <h1>
-    Latest
-  </h1>
-</div>
-
-  {{ .Content }}
-
-
-
-  <div class="content-grid">
-    {{ range first 3 (sort .Site.RegularPages "Date" "desc" (where .Site.RegularPages "Section" "work")) }}
-            <div class="content-card">
-              <a href="{{ .Permalink }}">
-                 <h2 class="grid-card-title">{{ .LinkTitle }}</h2>
-        {{ if and (isset .Params "image") .Params.image }}
-            {{ $image := .Page.Resources.GetMatch .Params.image }}
-            {{ with $image }}
-                {{ $thumb := .Resize "300x" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="" >
-            {{end}}
-                    {{ end }}
-            </a>
-            </div>
-
-  {{ end }}
+  <div class="work-header">
+    <h1>{{ T "latest" | default "Latest" }}</h1>
   </div>
 
-  <div class="more">
-      {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-      {{ if eq .Weight 10 }}
+  {{ with .Content }}
+  <div class="home-intro">{{ . }}</div>
+  {{ end }}
 
-      <a href="{{ .URL | relLangURL }}" aria-current="page" aria-label="{{ i18n .Identifier | default .Name }}">
-        {{ .Pre | markdownify }}{{ T "more" | default "more" }}
-      </a>
-
-      {{ end }}
+  <div class="content-grid">
+    {{ range first 3 (sort (where .Site.RegularPages "Section" "work") "Date" "desc") }}
+      {{ partial "work-card.html" . }}
     {{ end }}
   </div>
 
-
-
-
+  <a class="more" href="{{ (index (where .Site.Menus.main "Identifier" "work") 0).URL | relLangURL }}">
+    {{ T "more" | default "View all work" }}
+  </a>
 
 {{ end }}

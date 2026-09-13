@@ -8,6 +8,7 @@ datestart = 2020-07-01T00:00:00-07:00
 date = 2025-05-01T00:00:00-06:00
 externalurl = 'artandwriting.org'
 tags = ['product owner','product management','full stack','dev ops']
+practices = ['professional']
 +++
 
 - Technical manager for all digital products of the Scholastic Art and Writing Awards, a national award for teens, with 25 categories in visual arts and literature. 

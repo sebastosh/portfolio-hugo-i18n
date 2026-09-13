@@ -1,47 +1,57 @@
-<a class="title" href="{{ .Site.Home.RelPermalink }}" aria-label="Home">
-  <h1>{{ .Site.Title }}</h1>
-  <p>{{ .Site.Params.description }}</p>
+<a class="title" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }} — {{ T "home" | default "Home" }}">
+  {{ if .IsHome }}
+  <h1 class="site-name">{{ .Site.Title }}</h1>
+  {{ else }}
+  <p class="site-name">{{ .Site.Title }}</p>
+  {{ end }}
+  <p class="site-tagline">{{ .Site.Language.Params.description | default .Site.Params.description }}</p>
 </a>
-<nav>
 
-  {{ $currentPage := . }}
+<nav aria-label="{{ T "main-nav" | default "Main navigation" }}">
+
+  {{ $currentURL := .RelPermalink }}
 
   {{ range .Site.Menus.main }}
+
   {{ if eq .Identifier "language" }}
-  <!-- Dynamic Language Switcher -->
-
   <div class="dropdown">
-    <svg width="0.8em" height="0.8em" viewBox="0 0 22 22" focusable="false" class="icon-fill"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>
-    <a href="#" aria-expanded="false" aria-label="Language Switcher">
-      {{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}
+    <a href="#" aria-label="{{ T "language-switcher" | default "Language" }}" tabindex="0">
+      <svg width="0.85em" height="0.85em" viewBox="0 0 22 22" focusable="false" aria-hidden="true" class="icon-fill">
+        <path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+      </svg>
+      {{ i18n .Identifier | default .Name }}
     </a>
-
-
     <div class="dropdown-content">
       {{ with $.Page.Translations }}
-      {{ range . }}
-
-      <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Name }}">
-        {{ .Language.Label }}
-      </a>
-
-      {{ end }}
+        {{ range . }}
+        <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">
+          {{ .Language.LanguageName }}
+        </a>
+        {{ end }}
       {{ end }}
     </div>
-
   </div>
+
   {{ else }}
-  <!-- Regular Menu Items -->
 
-  <a href="{{ .URL | relLangURL }}" aria-current="page" aria-label="{{ i18n .Identifier | default .Name }}">{{ .Pre | markdownify }}{{ i18n .Identifier | default .Name }}</a>
+  {{/* Page-backed entries (pageRef) resolve their own per-language permalink;
+       url-based entries keep the original relLangURL behaviour. */}}
+  {{ $href := .URL | relLangURL }}
+  {{ with .Page }}{{ $href = .RelPermalink }}{{ end }}
+
+  <a href="{{ $href }}"
+     {{ if eq ($currentURL | strings.TrimSuffix "/") ($href | strings.TrimSuffix "/") }}aria-current="true"{{ end }}>
+    {{ i18n .Identifier | default .Name }}
+  </a>
 
   {{ end }}
   {{ end }}
-        <button
+
+  <button
     type="button"
     data-theme-toggle
-    aria-label="Change to light theme"
+    aria-label="Switch to dark theme"
     class="theme-toggle"
-  >🌞</button>
-</nav>
+  >🌚</button>
 
+</nav>

@@ -10,19 +10,23 @@ disableLanguages = []
 disableHugoGeneratorInject = false
 
 [params]
-  description = '1234'
+  description = 'Product Manager / Owner, Web Developer, Cultural Producer'
 
 [menus]
-  [[menus.main]]
-    identifier = 'work'
-    name = 'Work'
-    url = 'work/'
-    weight = 10
   [[menus.main]]
     identifier = 'about'
     name = 'About'
     url = 'about/'
+    weight = 10
+  [[menus.main]]
+    identifier = 'work'
+    name = 'Work'
+    url = 'work/'
     weight = 20
+  [[menus.main]]
+    identifier = 'contact'
+    pageRef = '/contact'
+    weight = 25
   # [[menus.main]]
   #   identifier = 'tags'
   #   name = 'tags'
@@ -72,6 +76,13 @@ disableHugoGeneratorInject = false
     [languages.es.permalinks]
         _work = "/obra/"
         work = "/obra/:slug"
+      [languages.es.permalinks.section]
+        contact = "/contacto/"
+        thanks = "/gracias/"
+
+[taxonomies]
+  tag = 'tags'
+  practice = 'practices'
 
 [sitemap]
   changefreq = "weekly"
