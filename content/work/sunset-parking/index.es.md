@@ -7,6 +7,7 @@ datestart = 2025-10-01T00:00:00-06:00
 date = 2026-09-01T00:00:00-06:00
 tags = ['Product Strategy','Agile','Hugo','Static Site','CI/CD','Cloudflare','Migration']
 practices = ['professional']
+career = true
 +++
 
 Consultoría de producto y desarrollo web para una pequeña empresa, desde el levantamiento de requisitos hasta la puesta en producción.

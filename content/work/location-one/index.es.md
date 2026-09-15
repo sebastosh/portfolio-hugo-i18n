@@ -7,6 +7,7 @@ datestart = 2004-05-01T00:00:00-05:00
 date = 2009-05-01T00:00:00-05:00
 tags = ['Cultural Production','Residency Program','Exhibitions','Public Programming','Wordpress']
 practices = ['professional']
+career = true
 +++
 
 Location One fue un espacio artístico sin fines de lucro en el SoHo de Nueva York, que albergaba un programa internacional de estudios para artistas visitantes junto con exposiciones y programación pública.

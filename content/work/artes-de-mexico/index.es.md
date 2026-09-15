@@ -9,6 +9,7 @@ date = 2001-05-01T00:00:00-06:00
 externalurl = 'https://artesdemexico.com/'
 tags = ['Editorial Design','Print','Photography','Research','Photoshop','QuarkXPress']
 practices = ['professional']
+career = true
 +++
 
 Artes de México es una editorial de la Ciudad de México. Su revista, relanzada en 1988 por Alberto Ruy Sánchez, publica números bilingües español–inglés, cada uno dedicado a un solo tema del arte, la artesanía y el patrimonio cultural de México.

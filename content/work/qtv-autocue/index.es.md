@@ -9,6 +9,7 @@ date = 2004-12-01T00:00:00-05:00
 tags = ['Live Broadcast','Production','Teleprompting','Broadcast Television']
 datePrecision = 'year'
 practices = ['professional']
+career = true
 +++
 
 QTV fue una de las primeras empresas de teleprompter en Estados Unidos, con la licencia de una patente de prompting en rollo de papel desde 1955; hoy opera como Autocue/QTV.

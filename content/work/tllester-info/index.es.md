@@ -8,6 +8,7 @@ externalurl = 'https://tllester.info'
 repo = 'https://github.com/sebastosh/tllester-info'
 tags = ['hugo','TinaCMS','HTML','JS','CSS','CI/CD', 'github','cloudflare','migration','wordpress']
 practices = ['professional']
+career = true
 +++
 
 [Todd Lanier Lester](https://tllester.info) es un artista que, durante más de dos décadas, ha lanzado una serie de tres obras participativas centradas en los derechos humanos, situadas entre el medio visual y la metodología escénica.

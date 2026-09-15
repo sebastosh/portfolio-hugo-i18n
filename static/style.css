@@ -610,7 +610,7 @@ nav > a[aria-current="true"] {
 /* Inline links in prose need a visible affordance */
 .content a,
 .home-intro a,
-.bio-summary a {
+.bio-prose a {
     color: var(--color-accent);
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -621,13 +621,13 @@ nav > a[aria-current="true"] {
 
 .content a:visited,
 .home-intro a:visited,
-.bio-summary a:visited {
+.bio-prose a:visited {
     color: var(--color-accent);
 }
 
 .content a:hover,
 .home-intro a:hover,
-.bio-summary a:hover {
+.bio-prose a:hover {
     color: var(--color-accent);
     text-decoration-color: var(--color-accent);
     background-color: var(--color-accent-dim);
@@ -649,7 +649,7 @@ nav > a[aria-current="true"] {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-4);
     align-items: center;
-    padding: var(--space-6) 0;
+    padding: var(--space-6) 0 var(--space-2);
     border-bottom: 1px solid var(--color-border);
     margin-bottom: var(--space-8);
 }
@@ -671,38 +671,176 @@ nav > a[aria-current="true"] {
     width: 100%;
 }
 
-.bio-summary {
-    font-size: var(--text-md);
-    line-height: 1.65;
-    color: var(--color-fg-muted);
-    max-width: var(--content-max);
-    margin: 0 0 var(--space-12);
-}
-
+/* Intro: portrait beside the lead statement and stats */
 .bio-card {
-    display: flex;
-    gap: var(--space-8);
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: minmax(220px, 320px) 1fr;
+    gap: var(--space-12);
+    align-items: start;
+    margin-bottom: var(--space-16);
 }
 
-.bio h2 {
+.bio-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-8);
+}
+
+.bio-lead {
+    font-size: var(--text-md);
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+    color: var(--color-fg);
+    max-width: 34ch;
+    text-wrap: balance;
+    margin: 0;
+}
+
+/* Stats — grid lines, no boxes */
+.bio-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.bio-stat {
+    padding: var(--space-4) var(--space-4) var(--space-4) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.bio-stat:nth-child(even) {
+    border-inline-start: 1px solid var(--color-border);
+    padding-inline-start: var(--space-4);
+}
+
+.bio-stat-value {
+    font-size: var(--text-md);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--color-fg);
+    margin: 0 0 var(--space-2);
+    font-variant-numeric: tabular-nums;
+}
+
+.bio-stat-label {
+    font-size: var(--text-xs);
+    line-height: 1.45;
+    color: var(--color-fg-subtle);
+    margin: 0;
+}
+
+/* Narrative prose */
+.bio-prose {
+    max-width: var(--content-max);
+    margin: 0 0 var(--space-16);
+}
+
+.bio-prose p {
+    font-size: var(--text-base);
+    line-height: 1.7;
+    color: var(--color-fg-muted);
+    margin: 0 0 var(--space-4);
+}
+
+.bio-prose p:first-child {
+    color: var(--color-fg);
+}
+
+/* Sections */
+.bio-section {
+    margin: 0 0 var(--space-16);
+}
+
+.bio-section > h2 {
     font-size: var(--text-lg);
     font-weight: 700;
     letter-spacing: -0.025em;
     margin: 0 0 var(--space-6);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--color-border);
 }
 
-.bio h3 {
+.bio-section h3 {
     font-size: var(--text-xs);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--color-fg-subtle);
     margin: var(--space-8) 0 var(--space-3);
-    padding-inline-start: 0;
 }
 
-.bio ul {
+.bio-section h3:first-of-type {
+    margin-top: 0;
+}
+
+/* Career timeline */
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 8.5rem 1fr;
+    gap: var(--space-6);
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.timeline-item:last-child {
+    border-bottom: 0;
+}
+
+.timeline-years {
+    font-size: var(--text-xs);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    color: var(--color-fg-subtle);
+    margin: 0;
+    padding-top: 0.2em;
+}
+
+.timeline-body { min-width: 0; }
+
+.bio-section .timeline-role {
+    font-size: var(--text-base);
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: -0.01em;
+    color: var(--color-fg);
+    margin: 0 0 var(--space-1);
+}
+
+.timeline-org {
+    font-size: var(--text-sm);
+    color: var(--color-fg-muted);
+    margin: 0;
+}
+
+.timeline-org a {
+    color: var(--color-fg-muted);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in oklch, var(--color-fg-muted) 30%, transparent);
+    text-underline-offset: 0.18em;
+    transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+
+.timeline-org a:hover {
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
+}
+
+.timeline-place {
+    color: var(--color-fg-subtle);
+}
+
+/* Chips (practice + tools) */
+.chip-list {
     margin: 0 0 var(--space-2);
     display: flex;
     flex-wrap: wrap;
@@ -711,12 +849,74 @@ nav > a[aria-current="true"] {
     padding: 0;
 }
 
-.bio ul li {
+.chip-list li {
     font-size: var(--text-xs);
     color: var(--color-fg-muted);
     border: 1px solid var(--color-border);
     padding: 2px var(--space-2);
     line-height: 1.7;
+}
+
+/* Education / languages / service */
+.bio-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-12);
+}
+
+.fact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fact-list li {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.fact-list li:last-child {
+    border-bottom: 0;
+}
+
+.fact-list-wide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 0 var(--space-8);
+}
+
+.fact-primary {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-fg);
+    margin: 0 0 var(--space-1);
+}
+
+.fact-primary a {
+    color: var(--color-fg);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in oklch, var(--color-fg) 25%, transparent);
+    text-underline-offset: 0.18em;
+    transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+
+.fact-primary a:hover {
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
+}
+
+.fact-secondary {
+    font-size: var(--text-xs);
+    color: var(--color-fg-subtle);
+    margin: 0;
+}
+
+.fact-year {
+    font-variant-numeric: tabular-nums;
+}
+
+.fact-year::before {
+    content: ' · ';
 }
 
 /* CV download button */
@@ -865,7 +1065,33 @@ footer p {
     }
 
     .bio-card {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+        margin-bottom: var(--space-12);
+    }
+
+    /* A full-bleed portrait would push the lead off the first screen. */
+    .bio-portrait img {
+        max-width: 200px;
+    }
+
+    .bio-lead {
+        max-width: none;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: var(--space-1);
+    }
+
+    .timeline-years {
+        padding-top: 0;
+        order: -1;
+    }
+
+    .bio-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .pagination {
@@ -883,6 +1109,19 @@ footer p {
 @media (max-width: 480px) {
     .content-grid {
         grid-template-columns: 1fr;
+    }
+
+    .bio-portrait img {
+        max-width: 168px;
+    }
+
+    .bio-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-stat:nth-child(even) {
+        border-inline-start: 0;
+        padding-inline-start: 0;
     }
 }
 

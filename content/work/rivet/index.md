@@ -3,10 +3,12 @@ title = 'Rivet'
 position = 'Product Designer / Co-founder'
 location = 'New York City, USA'
 image = "rivet.jpg"
+datestart = 2016-09-01T00:00:00-05:00
 date = 2020-06-01T00:00:00-06:00
 externalurl = 'https://rivet.es'
 tags = ['Product Design','Product Management','Entrepreneurship','Incubator' ]
 practices = ['collaboration']
+career = true
 +++
 
 Rivet is a unified search platform designed to help you find and activate opportunities to advance your creative practice.

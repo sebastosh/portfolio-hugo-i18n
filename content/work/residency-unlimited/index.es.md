@@ -8,6 +8,7 @@ date = 2017-12-31T00:00:00-06:00
 externalurl = 'https://residencyunlimited.org/'
 tags = ['Cofundador','Operaciones','Producción cultural','Administración','Redacción de subvenciones','Contabilidad','Redacción de subvenciones','PHP','WordPress','PHP','CSS','HTML']
 practices = ['professional']
+career = true
 +++
 
 Residency Unlimited (RU) es una organización artística sin fines de lucro que apoya el proceso creativo de artistas y curadores estadounidenses e internacionales en todas las etapas de su carrera a través de residencias únicas y personalizadas y programas públicos durante todo el año.

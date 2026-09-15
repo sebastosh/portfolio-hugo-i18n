@@ -8,6 +8,7 @@ date = 2004-11-01T00:00:00-05:00
 externalurl = 'https://www.fluxfactory.org/'
 tags = ['Cultural Production','Graphic Design','Print','Identity Design','Events','Wordpress']
 practices = ['professional']
+career = true
 +++
 
 Flux Factory is a New York arts collective and non-profit organization supporting emerging artists through residencies, exhibitions, and collaborative projects.

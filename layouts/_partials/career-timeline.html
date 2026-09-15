@@ -1,0 +1,38 @@
+{{- /*
+Renders the career timeline from work items flagged `career = true`.
+
+The list is derived from content rather than duplicated here, so adding a
+career entry to content/work/ is enough to place it on the About page.
+
+@context {page} . The About page (used only for language scoping).
+
+@example: {{ partial "career-timeline.html" . }}
+*/ -}}
+
+{{- $entries := where site.RegularPages "Params.career" true -}}
+{{- with sort $entries "Date" "desc" }}
+<ol class="timeline">
+  {{- range . }}
+  {{- $end := .Date }}
+  {{- $start := default .Date .Params.datestart }}
+  {{- $years := $end.Format "2006" }}
+  {{- if ne ($start.Format "2006") ($end.Format "2006") }}
+    {{- $years = printf "%s–%s" ($start.Format "2006") ($end.Format "2006") }}
+  {{- end }}
+  <li class="timeline-item">
+    <p class="timeline-years">
+      <time datetime="{{ $start.Format "2006" }}">{{ $years }}</time>
+    </p>
+    <div class="timeline-body">
+      {{- with .Params.position }}
+      <h3 class="timeline-role">{{ . }}</h3>
+      {{- end }}
+      <p class="timeline-org">
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        {{- with .Params.location }} <span class="timeline-place">· {{ . }}</span>{{ end }}
+      </p>
+    </div>
+  </li>
+  {{- end }}
+</ol>
+{{- end }}

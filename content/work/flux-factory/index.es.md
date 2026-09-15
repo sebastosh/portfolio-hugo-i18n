@@ -8,6 +8,7 @@ date = 2004-11-01T00:00:00-05:00
 externalurl = 'https://www.fluxfactory.org/'
 tags = ['Cultural Production','Graphic Design','Print','Identity Design','Events','Wordpress']
 practices = ['professional']
+career = true
 +++
 
 Flux Factory es un colectivo artístico y organización sin fines de lucro de Nueva York que apoya a artistas emergentes mediante residencias, exposiciones y proyectos colaborativos.

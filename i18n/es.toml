@@ -53,3 +53,21 @@ other = "Proyecto"
 
 [source]
 other = "Fuente"
+
+[career]
+other = "Trayectoria"
+
+[what-i-do]
+other = "Lo que hago"
+
+[tools]
+other = "Herramientas del oficio"
+
+[education]
+other = "Formación"
+
+[languages]
+other = "Idiomas"
+
+[service]
+other = "Servicio al campo"

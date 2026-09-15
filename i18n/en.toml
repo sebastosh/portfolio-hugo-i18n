@@ -3,6 +3,7 @@ more = 'View All Work'
 latest = 'Latest'
 home = 'Home'
 visit = 'Visit'
+resume = 'Resume'
 repo = 'Repo'
 
 contact = 'Contact'
@@ -51,3 +52,21 @@ other = "Project"
 
 [source]
 other = "Source"
+
+[career]
+other = "Career"
+
+[what-i-do]
+other = "What I do"
+
+[tools]
+other = "Tools of the trade"
+
+[education]
+other = "Education"
+
+[languages]
+other = "Languages"
+
+[service]
+other = "Service to the field"

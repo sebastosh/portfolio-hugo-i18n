@@ -2,41 +2,145 @@
 <div class="work-header">
   <h1>{{ .Title }}</h1>
 </div>
+
 <div class="bio">
-  {{ if and (isset .Params "image") .Params.image }}
-  <div class="bio-portrait">
-    {{ with .Page.Resources.GetMatch .Params.image }}
-      {{ $img := .Resize "480x webp" }}
-      <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}" width="{{ $img.Width }}" height="{{ $img.Height }}">
-    {{ end }}
-    {{ partial "image-credit.html" . }}
-  </div>
-  {{ end }}
+
   <div class="bio-card">
-    <div class="bio-summary">{{ .Params.summary }}</div>
-    <a href="{{ .Params.resume }}" target="_blank">
-      <button class="button">
-        <span class="button__text">{{ T "resume" | default "Resume" }}</span>
-        <svg
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
-          viewBox="0 0 24 24"
-          height="40"
-          width="40"
-          class="button__icon"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
-          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-          <path d="M7 11l5 5l5 -5"></path>
-          <path d="M12 4l0 12"></path>
-        </svg>
-      </button>
-    </a>
+    {{ if and (isset .Params "image") .Params.image }}
+    <div class="bio-portrait">
+      {{ with .Page.Resources.GetMatch .Params.image }}
+        {{ $img := .Resize "480x webp" }}
+        <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}" width="{{ $img.Width }}" height="{{ $img.Height }}">
+      {{ end }}
+      {{ partial "image-credit.html" . }}
+    </div>
+    {{ end }}
+
+    <div class="bio-intro">
+      <p class="bio-lead">{{ .Params.lead | default .Description }}</p>
+      <a href="{{ .Params.resume }}" target="_blank" rel="noopener noreferrer">
+        <button class="button">
+          <span class="button__text">{{ T "resume" | default "Resume" }}</span>
+          <svg
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            height="40"
+            width="40"
+            class="button__icon"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+            <path d="M7 11l5 5l5 -5"></path>
+            <path d="M12 4l0 12"></path>
+          </svg>
+        </button>
+      </a>
+
+      {{ with .Params.stats }}
+      <dl class="bio-stats">
+        {{ range . }}
+        <div class="bio-stat">
+          <dt class="bio-stat-value">{{ .value }}</dt>
+          <dd class="bio-stat-label">{{ .label }}</dd>
+        </div>
+        {{ end }}
+      </dl>
+      {{ end }}
+    </div>
   </div>
-  {{ .Content }}
+
+  <div class="bio-prose">
+    {{ .Content }}
+  </div>
+
+  <section class="bio-section">
+    <h2>{{ T "career" | default "Career" }}</h2>
+    {{ partial "career-timeline.html" . }}
+  </section>
+
+  {{ with .Params.practice }}
+  <section class="bio-section">
+    <h2>{{ T "what-i-do" | default "What I do" }}</h2>
+    {{ range . }}
+    <h3>{{ .name }}</h3>
+    <ul class="chip-list">
+      {{ range .items }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{ with .Params.toolgroups }}
+  <section class="bio-section">
+    <h2>{{ T "tools" | default "Tools of the trade" }}</h2>
+    {{ range . }}
+    <h3>{{ .name }}</h3>
+    <ul class="chip-list">
+      {{ range .items }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  <div class="bio-columns">
+    {{ with .Params.education }}
+    <section class="bio-section">
+      <h2>{{ T "education" | default "Education" }}</h2>
+      <ul class="fact-list">
+        {{ range . }}
+        <li>
+          <p class="fact-primary">{{ .credential }}</p>
+          <p class="fact-secondary">
+            {{ .institution }}{{ with .location }} · {{ . }}{{ end }}
+            {{ with .year }}<span class="fact-year">{{ . }}</span>{{ end }}
+          </p>
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ with .Params.languages }}
+    <section class="bio-section">
+      <h2>{{ T "languages" | default "Languages" }}</h2>
+      <ul class="fact-list">
+        {{ range . }}
+        <li>
+          <p class="fact-primary">{{ with .flag }}<span aria-hidden="true">{{ . }}</span> {{ end }}{{ .name }}</p>
+          <p class="fact-secondary">{{ .level }}</p>
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  </div>
+
+  {{ with .Params.service }}
+  <section class="bio-section">
+    <h2>{{ T "service" | default "Service to the field" }}</h2>
+    <ul class="fact-list fact-list-wide">
+      {{ range . }}
+      <li>
+        <p class="fact-primary">
+          {{- /* `ref` is a content path so the link resolves to the
+                 current language's permalink, slug changes included. */ -}}
+          {{ if .ref }}<a href="{{ relref $ .ref }}">{{ .role }}</a>{{ else }}{{ .role }}{{ end }}
+        </p>
+        <p class="fact-secondary">
+          {{ .organization }}
+          {{ with .years }}<span class="fact-year">{{ . }}</span>{{ end }}
+        </p>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
 </div>
 {{ end }}

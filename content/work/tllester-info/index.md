@@ -8,6 +8,7 @@ externalurl = 'https://tllester.info'
 repo = 'https://github.com/sebastosh/tllester-info'
 tags = ['hugo','TinaCMS','HTML','JS','CSS','CI/CD', 'github','cloudflare','migration','wordpress']
 practices = ['professional']
+career = true
 +++
 
 [Todd Lanier Lester](https://tllester.info) is an artist who over two decades has launched a series of three rights-focused, participatory works situated between visual media and performance methodology.
